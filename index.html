@@ -29,7 +29,7 @@
   .label{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);}
 
   /* top bar */
-  .top{border-bottom:1px solid var(--line);}
+  .top{border-top:4px solid var(--pink);border-bottom:1px solid var(--line);}
   .top .row{display:flex;align-items:center;justify-content:space-between;height:74px;}
   .logo{display:flex;align-items:center;}
   .logo img{height:48px;width:auto;display:block;}
@@ -86,8 +86,8 @@
   .ft .ph{width:100%;height:100%;background:linear-gradient(150deg,var(--panel-2),#0E3A4D);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#cfe6f0;text-align:center;padding:24px;}
   .ft .ph .big{font-family:var(--serif);font-size:2rem;color:#fff;}
   .ft figcaption{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--ink-soft);text-align:center;margin-top:16px;}
-  .shots{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;align-items:flex-start;}
-  .shot{margin:0;width:300px;max-width:100%;}
+  .shots{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;align-items:flex-start;}
+  .shot{margin:0;width:270px;max-width:100%;}
   .shot img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);box-shadow:0 12px 32px rgba(35,32,28,.13);}
   .shot-ph{width:100%;aspect-ratio:9/16;border-radius:18px;background:linear-gradient(160deg,var(--panel-2),#0E3A4D);display:flex;align-items:center;justify-content:center;color:#cfe6f0;text-align:center;font-size:.82rem;padding:18px;}
   .shot figcaption{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--ink-soft);text-align:center;margin-top:12px;}
@@ -158,7 +158,7 @@
   <div class="wrap">
     <span class="label">In short</span>
     <p class="lead">I'm a product manager and designer with more than 15 years building web products people love, lately at <em>Kaiser Permanente</em>, where I lead product areas for an employee portal serving 233,000 people. On the side I run Wildsite Co., my little design studio, and I build with Claude every day.</p>
-      <p class="lead" style="font-size:1.25rem;margin-top:.6em;max-width:none;">Other sites I've worked on include Wells&nbsp;Fargo, Tufts&nbsp;Medical&nbsp;Center, and University of California San Francisco.</p>
+      <p class="lead" style="font-size:1.25rem;margin-top:.6em;max-width:none;">Other sites I've worked on include Wells&nbsp;Fargo, Tufts&nbsp;Medical&nbsp;Center, and University&nbsp;of&nbsp;California&nbsp;San&nbsp;Francisco.</p>
   </div>
 </section>
 
@@ -198,14 +198,17 @@
     <p style="text-align:center;max-width:60ch;margin:0 auto 30px;color:var(--ink-soft);">Driscmas is an interactive family tree and holiday RSVP web app for my family, 119 members over four generations. It's live online and password protected.</p>
     <div class="shots">
       <figure class="shot">
-        <!-- Save your welcome-screen screenshot as driscmas-login.png -->
-        <img src="driscmas-login.png" alt="The Driscmas welcome screen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <img src="driscmas-welcome.png" alt="The Driscmas welcome screen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="shot-ph" style="display:none;"><span>Save as<br>driscmas-welcome.png</span></div>
+        <figcaption>The welcome screen</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="driscmas-login.png" alt="The Driscoll family tree, generations 1 and 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div class="shot-ph" style="display:none;"><span>Save as<br>driscmas-login.png</span></div>
         <figcaption>Generation 1 and 2</figcaption>
       </figure>
       <figure class="shot">
-        <!-- Save your tree screenshot as driscmas-tree.png -->
-        <img src="driscmas-tree.png" alt="The Driscoll interactive family tree" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <img src="driscmas-tree.png" alt="The Driscoll family tree, generations 2 and 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
         <div class="shot-ph" style="display:none;"><span>Save as<br>driscmas-tree.png</span></div>
         <figcaption>Generation 2 and 3</figcaption>
       </figure>
