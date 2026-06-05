@@ -132,7 +132,8 @@
     .grid{grid-template-columns:repeat(2,1fr);}
     .eb-dot{display:none;}
     .eb-role{display:block;}
-    .shots{grid-template-columns:repeat(2,1fr);}
+    .shots{display:flex;grid-template-columns:none;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:10px;}
+    .shot{flex:0 0 80%;scroll-snap-align:center;}
     .summary p{font-size:1.4rem;}
     .ft .frame{aspect-ratio:4/3;}
     .timeline{flex-direction:column;align-items:flex-start;padding:2px 0 0 2px;}
