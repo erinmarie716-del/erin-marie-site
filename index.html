@@ -20,16 +20,16 @@
   }
   *{box-sizing:border-box;}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.26;background-repeat:repeat;background-size:125px 125px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cg fill='%23154C63'%3E%3Cpath d='M24 20l.7 2.3 2.3.7-2.3.7L24 26l-.7-2.3L21 23l2.3-.7z'/%3E%3Cpath d='M104 40l.5 1.7 1.7.5-1.7.5L104 45l-.5-1.7-1.7-.5 1.7-.5z'/%3E%3Cpath d='M66 92l.6 2 2 .6-2 .6L66 98l-.6-2-2-.6 2-.6z'/%3E%3Cpath d='M130 116l.5 1.6 1.6.5-1.6.5L130 121l-.5-1.6-1.6-.5 1.6-.5z'/%3E%3Cpath d='M38 128l.5 1.7 1.7.5-1.7.5L38 133l-.5-1.7-1.7-.5 1.7-.5z'/%3E%3C/g%3E%3C/svg%3E");}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:repeating-linear-gradient(90deg,rgba(58,168,224,.10) 0,rgba(58,168,224,.10) 1px,transparent 1px,transparent 5px);}
   .wrap{max-width:920px;margin:0 auto;padding:0 28px;}
   a{color:var(--pink);text-decoration:none;}
   h1,h2{font-family:var(--serif);font-weight:500;line-height:1.06;margin:0;}
   em{font-style:italic;color:var(--pink);}
   .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);}
-  .label{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);}
+  .label{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#23201C;}
 
   /* top bar */
-  .top{border-bottom:1px solid var(--line);}
+  .top{border-bottom:0.5px solid rgba(35,32,28,.45);}
   .top .row{display:flex;align-items:center;justify-content:space-between;height:74px;}
   .logo{display:flex;align-items:center;}
   .logo img{height:48px;width:auto;display:block;}
@@ -63,7 +63,7 @@
   .summary .lead{max-width:62ch;}
 
   /* path timeline */
-  .path{padding:6px 0 44px;}
+  .path{padding:34px 0 44px;}
   .path .label{display:block;margin-bottom:4px;}
   .timeline{list-style:none;display:flex;justify-content:space-between;align-items:flex-start;margin:22px 0 0;padding:0 4px;position:relative;}
   .timeline::before{content:"";position:absolute;left:7%;right:7%;top:12px;height:2px;border-radius:2px;z-index:0;background:linear-gradient(90deg,var(--sky),var(--green),var(--pink-br),var(--pink));}
@@ -186,7 +186,7 @@
 <section class="summary">
   <div class="wrap">
     <span class="label">In short</span>
-    <p class="lead">I'm a product manager and designer with more than 15 years building web products people love, lately at <em>Kaiser Permanente</em>, where I lead product areas for an employee portal serving 233,000 people. For me, product is where it all comes together, the content, the design, the UX, and the development. On the side I run Wildsite Co., my little design studio, where I play with color, white space, and balance.</p>
+    <p class="lead">I'm a product manager and designer with more than 15 years building web products people love, lately at <em>Kaiser Permanente</em>, where I lead product areas for an employee portal serving 233,000 people. For me, product is where it all comes together, the content, the design, the UX, and the development. On the side I run Wildsite Co., my little design studio, where I play with color, font, and visuals.</p>
       <p class="lead" style="font-size:1.25rem;margin-top:.6em;max-width:none;text-wrap:balance;">Other sites I've worked on include Wells&nbsp;Fargo, Tufts&nbsp;Medical&nbsp;Center, University of California San Francisco, and Hatch&nbsp;My&nbsp;House, a startup I founded and grew to $3.5M in gift transactions.</p>
   </div>
 </section>
