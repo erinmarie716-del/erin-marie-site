@@ -89,12 +89,12 @@
   .links{padding:26px 0;}
   .links .label{display:block;text-align:center;margin-bottom:26px;}
   .grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:18px;}
-  .lcard{display:flex;flex-direction:column;align-items:flex-start;min-height:160px;border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;background:var(--paper);box-shadow:0 8px 22px rgba(35,32,28,.07);transition:transform .15s ease,box-shadow .15s ease;}
+  .lcard{display:flex;flex-direction:column;align-items:flex-start;min-width:0;min-height:160px;border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;background:var(--paper);box-shadow:0 8px 22px rgba(35,32,28,.07);transition:transform .15s ease,box-shadow .15s ease;}
   .lcard:hover{text-decoration:none;transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,32,28,.13);}
   .lcard .dotmark{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;flex:none;}
   .lcard .dotmark svg{width:22px;height:22px;}
   .lcard .nm{font-family:var(--serif);font-size:1.3rem;line-height:1.15;color:var(--ink);min-height:2.3em;}
-  .lcard .go{font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-top:auto;padding-top:8px;white-space:nowrap;}
+  .lcard .go{font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-top:auto;padding-top:8px;overflow-wrap:anywhere;}
   .d1{background:linear-gradient(150deg,#F4A276,#E0703F);}
   .d2{background:linear-gradient(150deg,#34618C,#1B3A5C);}
   .d3{background:linear-gradient(150deg,#3B8FD9,#0A66C2);}
