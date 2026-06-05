@@ -13,14 +13,14 @@
 <style>
   :root{
     --cream:#FBF7F0; --paper:#FFFFFF; --ink:#23201C; --ink-soft:#5E574E; --ink-faint:#8E867A;
-    --sky:#3AA8E0; --sky-d:#1C7CB0; --green:#62B25A; --green-d:#46883F;
-    --pink:#D6336C; --pink-br:#F368A4; --pink-soft:#FBD0E0;
+    --sky:#2E89AB; --sky-d:#1C7CB0; --green:#4E9E84; --green-d:#46883F;
+    --pink:#D6336C; --pink-br:#E85C95; --pink-soft:#FBD0E0;
     --panel:#154C63; --panel-2:#1C6A86; --line:#E6DCCB;
     --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,sans-serif;
   }
   *{box-sizing:border-box;}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:repeating-linear-gradient(90deg,rgba(58,168,224,.10) 0,rgba(58,168,224,.10) 1px,transparent 1px,transparent 5px);}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:repeating-linear-gradient(90deg,rgba(46,137,171,.06) 0,rgba(46,137,171,.06) 1px,transparent 1px,transparent 5px);}
   .wrap{max-width:920px;margin:0 auto;padding:0 28px;}
   a{color:var(--pink);text-decoration:none;}
   h1,h2{font-family:var(--serif);font-weight:500;line-height:1.06;margin:0;}
@@ -29,7 +29,7 @@
   .label{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#23201C;}
 
   /* top bar */
-  .top{border-bottom:0.5px solid rgba(35,32,28,.45);}
+  .top{border-bottom:0.75px solid rgba(35,32,28,.45);}
   .top .row{display:flex;align-items:center;justify-content:space-between;height:74px;}
   .logo{display:flex;align-items:center;}
   .logo img{height:48px;width:auto;display:block;}
@@ -56,14 +56,14 @@
   .btn-ink{background:transparent;color:var(--ink);border-color:var(--line);}
 
   /* summary */
-  .summary{padding:60px 0 12px;}
+  .summary{padding:26px 0;}
   .summary .label{display:block;margin-bottom:14px;}
   .summary p{font-family:var(--serif);font-size:1.7rem;line-height:1.4;color:var(--ink);max-width:34ch;margin:0;}
   .summary p:first-of-type{max-width:none;}
   .summary .lead{max-width:62ch;}
 
   /* path timeline */
-  .path{padding:34px 0 44px;}
+  .path{padding:26px 0;}
   .path .label{display:block;margin-bottom:4px;}
   .timeline{list-style:none;display:flex;justify-content:space-between;align-items:flex-start;margin:22px 0 0;padding:0 4px;position:relative;}
   .timeline::before{content:"";position:absolute;left:7%;right:7%;top:12px;height:2px;border-radius:2px;z-index:0;background:linear-gradient(90deg,var(--sky),var(--green),var(--pink-br),var(--pink));}
@@ -86,9 +86,9 @@
   @media(prefers-reduced-motion:reduce){.timeline li{animation:none;opacity:1;transform:none;}}
 
   /* links row */
-  .links{padding:46px 0;}
+  .links{padding:26px 0;}
   .links .label{display:block;text-align:center;margin-bottom:26px;}
-  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:18px;}
   .lcard{display:flex;flex-direction:column;align-items:flex-start;min-height:160px;border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;background:var(--paper);box-shadow:0 8px 22px rgba(35,32,28,.07);transition:transform .15s ease,box-shadow .15s ease;}
   .lcard:hover{text-decoration:none;transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,32,28,.13);}
   .lcard .dotmark{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;flex:none;}
@@ -101,7 +101,7 @@
   .d4{background:linear-gradient(150deg,#5A5650,#23201C);}
 
   /* family tree feature */
-  .ft-sec{padding:30px 0 70px;}
+  .ft-sec{padding:26px 0;}
   .ft-sec .label{display:block;text-align:center;margin-bottom:22px;}
   .ft{margin:0;}
   .ft .frame{border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 36px rgba(35,32,28,.12);aspect-ratio:16/7;display:block;}
@@ -130,6 +130,8 @@
     .panel .photo{order:-1;padding:34px 28px 8px;}
     .panel .circle{width:190px;height:190px;}
     .grid{grid-template-columns:repeat(2,1fr);}
+    .eb-dot{display:none;}
+    .eb-role{display:block;}
     .summary p{font-size:1.4rem;}
     .ft .frame{aspect-ratio:4/3;}
     .timeline{flex-direction:column;align-items:flex-start;padding:2px 0 0 2px;}
@@ -160,7 +162,7 @@
   <div class="wrap">
     <div class="panel">
       <div class="copy">
-        <span class="eyebrow">Erin-Marie Driscoll · product &amp; design</span>
+        <span class="eyebrow">Erin-Marie Driscoll <span class="eb-dot">·</span><span class="eb-role"> product &amp; design</span></span>
         <h1>A creative ideas<br>person who<br>delivers<span class="stop">.</span></h1>
         <p class="sub">Fifteen years turning the spark into a real thing.</p>
         <div class="cta">
