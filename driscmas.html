@@ -87,6 +87,10 @@
   .palette-block .pal-label{margin-top:4px;}
   .palette-block .palette{margin:10px 0 2px;max-width:none;}
   .fig figcaption{font-family:var(--serif);font-style:italic;font-size:1.08rem;color:var(--ink-soft);text-align:center;margin-top:12px;}
+  .fig-right{float:right;width:230px;margin:2px 0 14px 30px;}
+  .fig-right img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line);box-shadow:0 12px 32px rgba(35,32,28,.13);}
+  .fig-right figcaption{font-family:var(--serif);font-style:italic;font-size:1rem;color:var(--ink-soft);text-align:center;margin-top:8px;}
+  @media(max-width:600px){.fig-right{float:none;width:220px;margin:16px auto;}}
   .duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:560px;margin:30px auto;}
   .duo figure{margin:0;}
   .duo img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line);box-shadow:0 12px 32px rgba(35,32,28,.13);}
@@ -230,7 +234,7 @@
     </div>
 
     <!-- ITERATION 1 -->
-    <div class="col prose">
+    <div class="col prose" style="display:flow-root;">
       <div class="h2wrap" id="iteration-one">
         <span class="kicker">Iteration one</span>
         <h2>Christmas 2025: the first version</h2>
@@ -238,16 +242,12 @@
       <p>The first Driscmas came together for Christmas 2025. I hired a developer (a few hundred dollars) and provided the idea, names, photos and design direction. They built it in <strong>Cursor</strong> from that, and it was live in time for the holidays.</p>
 
       <h3>The design direction</h3>
+      <figure class="fig-right">
+        <img src="assets/driscmas-v1-stripe.jpg" alt="Stripe.com's product grid, used as a design reference">
+        <figcaption>My reference: Stripe's product grid.</figcaption>
+      </figure>
       <p class="soft">I didn't write the code, but the design direction was mine: a visual reference for the overall feel, a design for the person cards, a color system for the generations, and the holiday mood I wanted.</p>
       <p class="soft">I started from <em>Stripe</em>. I love how their product cards float on a soft background, linked by thin lines: calm, clean, and clearly structured. That became the north star for how the tree should feel.</p>
-    </div>
-
-    <figure class="fig med">
-      <img src="assets/driscmas-v1-stripe.jpg" alt="Stripe.com's product grid, used as a design reference">
-      <figcaption>My reference: Stripe's product grid.</figcaption>
-    </figure>
-
-    <div class="col prose">
       <p class="soft">Then we agreed on a single "person box" for everyone: a rounded white card, a soft gradient circle with the person's initial (a photo drops in when there is one), their name, and a small cross beside anyone we've lost.</p>
     </div>
 
@@ -338,15 +338,7 @@
         <li>A card per person with a photo and name, and a colored initials avatar as a graceful fallback.</li>
         <li>Fill it with the real family: I imported all 119 people from a spreadsheet of names I already had, sorted into four generations and color-coded, and handled the messy cases (like a relative with both a current and a former partner) so they read cleanly on a phone.</li>
       </ul>
-
-      <h3><span class="step">4</span>Finding anyone: search</h3>
-      <p class="soft">With that many relatives, tapping through the tree isn't enough, and search was actually <em>Claude's</em> idea, not mine. It suggested it early, and it turned out to be one of the most useful things in the app: type a name, jump straight to them, each result labeled by generation.</p>
     </div>
-
-    <figure class="fig phone">
-      <img src="assets/driscmas-search.png" alt="Searching the family tree by name">
-      <figcaption>Search: essential once you pass a hundred people.</figcaption>
-    </figure>
 
     <div class="duo">
       <figure>
@@ -360,6 +352,16 @@
     </div>
 
     <div class="col prose">
+      <h3><span class="step">4</span>Finding anyone: search</h3>
+      <p class="soft">With that many relatives, tapping through the tree isn't enough, and search was actually <em>Claude's</em> idea, not mine. It suggested it early, and it turned out to be one of the most useful things in the app: type a name, jump straight to them, each result labeled by generation.</p>
+    </div>
+
+    <figure class="fig phone">
+      <img src="assets/driscmas-search.png" alt="Searching the family tree by name">
+      <figcaption>Search: essential once you pass a hundred people.</figcaption>
+    </figure>
+
+    <div class="col prose">
       <h3><span class="step">5</span>A Cloudflare database</h3>
       <p class="soft">To make it secure and shared, I hired an engineer to move the family's names into a Cloudflare database, with the photos kept in Cloudflare storage, so everyone opens the same tree.</p>
 
@@ -367,7 +369,7 @@
       <p class="soft">And the password now lives in a Cloudflare Pages secret, out of the page's code, so the family data only loads for someone who's signed in.</p>
 
       <h3><span class="step">7</span>Claude, GitHub to Cloudflare</h3>
-      <p class="soft">The site is hosted on Cloudflare, which holds the database and photos. When I make an HTML update through Claude and/or GitHub, it tells Cloudflare there's a change and pushes it live. I shared one link and one password with the family, and Driscmas was live again, this time secure and mobile friendly.</p>
+      <p class="soft">The site is hosted on Cloudflare, which holds the database and photos, and I make updates using Claude and GitHub. I shared one link and one password with the family, and Driscmas was live again, this time secure and mobile friendly.</p>
     </div>
 
   </div>
