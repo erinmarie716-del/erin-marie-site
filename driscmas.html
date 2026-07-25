@@ -245,8 +245,8 @@
         <img src="assets/driscmas-v1-stripe.jpg" alt="Stripe.com's product grid, used as a design reference">
         <figcaption>My reference: Stripe's product grid.</figcaption>
       </figure>
-      <p class="soft">I didn't write the code, but the design direction was mine: a visual reference for the overall feel, a design for the person cards, a color system for the generations, and the holiday mood I wanted.</p>
-      <p class="soft">I started from <em>Stripe</em>. I love how their product cards float on a soft background, linked by thin lines: calm, clean, and clearly structured.</p>
+      <p class="soft">I didn't write the code, but the look was mine to decide: a reference for the overall feel, the design of the person cards, a color for each generation, and the holiday mood I wanted.</p>
+      <p class="soft">I started with <em>Stripe's</em> website. I love how their little cards float on a soft background, joined by thin lines: calm, clean, and easy to follow.</p>
       <p class="soft">Then we agreed on a single "person box" for everyone: a rounded white card, a soft gradient circle with the person's initial (a photo drops in when there is one), their name, and a small cross beside anyone we've lost.</p>
     </div>
 
@@ -256,7 +256,7 @@
     </figure>
 
     <div class="col prose">
-      <p class="soft">Stacked together, those cards make the tree: generations top to bottom, connector lines tracing parents, partners, and children.</p>
+      <p class="soft">Stacked together, those cards make the tree, generation by generation from top to bottom, with lines linking parents, partners, and children.</p>
     </div>
 
     <figure class="fig wide" style="max-width:645px;">
@@ -265,7 +265,7 @@
     </figure>
 
     <div class="col prose">
-      <p class="soft">Each generation got its own color, from a palette I picked so every layer of the family reads distinctly.</p>
+      <p class="soft">Each generation got its own color, so you can tell the different parts of the family apart at a glance.</p>
     </div>
     <div class="palette-block">
       <div class="pal-label">Generation colors</div>
@@ -279,7 +279,7 @@
     </div>
 
     <div class="col prose">
-      <p class="soft">Alongside those, a set of Christmas colors were added for warmth and a holiday feel.</p>
+      <p class="soft">And I added a set of Christmas colors, for warmth and a holiday feel.</p>
     </div>
     <div class="palette-block">
       <div class="pal-label">Christmas colors</div>
@@ -298,7 +298,7 @@
 
     <figure class="fig wide" style="max-width:516px;">
       <img src="assets/driscmas-v1-party.jpg" alt="The Driscmas family tree displayed over a photo of the family Christmas party">
-      <figcaption>The tree, up at our Christmas party.</figcaption>
+      <figcaption>The family tree, version one</figcaption>
     </figure>
 
     <!-- ITERATION 2 -->
@@ -310,7 +310,7 @@
       <p>A few months passed and I found some time to work on the mobile version. I also realized there were security issues. The names and password were not protected in a database and could be seen right there in the HTML code! So, I decided to rebuild it myself, this time with Claude.</p>
 
       <h3><span class="step">1</span>It started with one prompt</h3>
-      <p class="soft">No spec, no wireframe. Just the intent, typed in plain language:</p>
+      <p class="soft">No plan, no drawings. I just typed what I wanted, in plain words:</p>
       <blockquote class="quote">
         "I want to create a family tree of 100 people with photos and names that is Mobile first."
         <span class="who">My very first message</span>
@@ -324,23 +324,22 @@
 
     <div class="col prose">
       <h3><span class="step">2</span>The first prototype</h3>
-      <p class="soft">Within minutes there was something real on screen: a small, tappable tree. Thirteen placeholder people, colored initials where the photos would go, an "Add person" button. Rough, but real enough to react to, which is the whole point.</p>
+      <p class="soft">Within minutes there was something real on screen: a small tree I could tap through. Thirteen made-up people, colored circles where the photos would go, and an "Add person" button. Rough, but real enough to start working with, which was the whole point.</p>
     </div>
 
     <figure class="fig phone">
       <img src="assets/driscmas-prototype.png" alt="An early prototype of the family tree with 13 placeholder people">
-      <figcaption>The first prototype: 13 people, placeholder names.</figcaption>
+      <figcaption>The first prototype: 13 people, made-up names.</figcaption>
     </figure>
 
     <div class="col prose">
       <h3><span class="step">3</span>The plan</h3>
-      <p class="soft">Before going further, Claude sketched a plan we could build against:</p>
+      <p class="soft">Before going further, Claude laid out a plan for us to work from:</p>
       <ul class="plan">
-        <li>A mobile-first, zoomable tree you navigate with your thumbs: pinch to zoom, drag to pan.</li>
-        <li>Tap any person to focus them: their parents, partner, and children, centered on screen.</li>
-        <li>A search bar to jump to anyone by name, essential once you pass a hundred people.</li>
-        <li>A card per person with a photo and name, and a colored initials avatar as a graceful fallback.</li>
-        <li>Fill it with the real family: I imported all 119 people from a spreadsheet of names I already had, sorted into four generations and color-coded, and handled the messy cases (like a relative with both a current and a former partner) so they read cleanly on a phone.</li>
+        <li>Tap anyone to bring them front and center, with their parents, partner, and children around them.</li>
+        <li>A search to jump to anyone by name, which really matters once you pass a hundred people.</li>
+        <li>A card for each person with their photo and name, and if there's no photo, a colored circle with their initials instead.</li>
+        <li>Fill it with the real family. I brought in all 119 people from a spreadsheet I already had, sorted them into four generations with their colors, and worked out the tricky cases (like someone with a current and a former partner) so they'd look right on a phone.</li>
       </ul>
     </div>
 
@@ -357,7 +356,7 @@
 
     <div class="col prose">
       <h3><span class="step">4</span>Finding anyone: search</h3>
-      <p class="soft">With that many relatives, tapping through the tree isn't enough, and search was actually <em>Claude's</em> idea, not mine. It suggested it early, and it turned out to be one of the most useful things in the app: type a name, jump straight to them, each result labeled by generation.</p>
+      <p class="soft">With that many relatives, tapping through the tree only gets you so far, and search was actually <em>Claude's</em> idea, not mine. It brought it up early, and it turned out to be one of the handiest parts of the app: type a name, and it takes you straight there, with each result showing the generation.</p>
     </div>
 
     <figure class="fig phone">
@@ -367,12 +366,12 @@
 
     <div class="col prose">
       <h3><span class="step">5</span>A Cloudflare database</h3>
-      <p class="soft">To make it secure and shared, I hired an engineer to move the family's names into a Cloudflare database, with the photos kept in Cloudflare storage, so everyone opens the same tree.</p>
+      <p class="soft">To make it safe and shareable, I hired an engineer to move the family's names into a database on Cloudflare, with the photos stored there too, so everyone opens the same tree.</p>
 
       <h3><span class="step">6</span>A secret password</h3>
-      <p class="soft">And the password now lives in a Cloudflare Pages secret, out of the page's code, so the family data only loads for someone who's signed in.</p>
+      <p class="soft">And the password now lives in a secret on Cloudflare, not in the page's code, so the family's details only load once someone's signed in.</p>
 
-      <h3><span class="step">7</span>Claude, GitHub to Cloudflare</h3>
+      <h3><span class="step">7</span>Live again</h3>
       <p class="soft">The site is hosted on Cloudflare, which holds the database and photos, and I make updates using Claude and GitHub. I shared one link and one password with the family, and Driscmas was live again, this time secure and mobile friendly.</p>
     </div>
 
