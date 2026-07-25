@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>erin-marie.com · Style Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF7F0; --paper:#FFFFFF; --ink:#23201C; --ink-soft:#5E574E; --ink-faint:#8E867A;
+    --sky:#2E89AB; --sky-d:#1C7CB0; --green:#4E9E84; --green-d:#46883F;
+    --pink:#D6336C; --pink-br:#E85C95; --pink-soft:#FBD0E0;
+    --panel:#154C63; --panel-2:#1C6A86; --line:#E6DCCB;
+    --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 28px;}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0;}
+  em{font-style:italic;color:var(--pink);}
+  a{color:var(--pink);}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;background:var(--cream);border:1px solid var(--line);border-radius:5px;padding:1px 6px;color:#7a3350;}
+  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--pink);}
+
+  /* header */
+  header.top{background:var(--panel);color:#fff;padding:54px 0 46px;}
+  header.top .eyebrow{color:#9BD6EE;display:block;margin-bottom:14px;}
+  header.top h1{color:#fff;font-size:clamp(2.4rem,6vw,3.6rem);}
+  header.top h1 .stop{color:var(--pink-br);}
+  header.top p{max-width:56ch;color:#Eaf3f7;margin:16px 0 0;font-size:1.05rem;}
+
+  /* sections */
+  section{padding:44px 0;border-bottom:1px solid var(--line);}
+  section > .wrap > .eyebrow{display:block;margin-bottom:8px;}
+  .sec-title{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:6px;}
+  .sec-note{color:var(--ink-soft);max-width:60ch;margin:0 0 26px;}
+
+  /* swatches */
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px;}
+  .sw{border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 6px 16px rgba(35,32,28,.06);}
+  .sw .chip{height:76px;}
+  .sw .body{padding:10px 12px;background:var(--paper);}
+  .sw .nm{font-weight:600;font-size:.9rem;}
+  .sw .hex{font-family:ui-monospace,monospace;font-size:.78rem;color:var(--ink-soft);}
+  .sw .role{font-size:.76rem;color:var(--ink-faint);margin-top:2px;}
+  .pal-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px;}
+  .pal-row .c{width:74px;border:1px solid var(--line);border-radius:8px;overflow:hidden;}
+  .pal-row .c .k{height:44px;}
+  .pal-row .c .h{font-family:ui-monospace,monospace;font-size:.6rem;text-align:center;padding:4px 2px;color:var(--ink-soft);}
+  .sub-label{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin:22px 0 8px;}
+
+  /* type specimens */
+  .spec{border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:14px;background:var(--paper);}
+  .spec .meta{font-size:.75rem;color:var(--ink-faint);margin-top:8px;font-family:ui-monospace,monospace;}
+  .t-h1{font-family:var(--serif);font-size:clamp(2.4rem,6vw,4rem);color:var(--ink);letter-spacing:-.015em;}
+  .t-h2{font-family:var(--serif);font-size:2.2rem;color:var(--ink);}
+  .t-h3{font-family:var(--serif);font-size:1.5rem;color:var(--ink);}
+  .t-lead{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--ink-soft);}
+  .t-body{font-family:var(--sans);font-size:1rem;color:var(--ink);max-width:60ch;}
+  .t-eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--pink);}
+
+  /* components */
+  .comp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;align-items:start;}
+  .demo{border:1px solid var(--line);border-radius:14px;padding:22px;background:var(--paper);}
+  .demo .cap{font-size:.72rem;color:var(--ink-faint);margin-top:14px;font-family:ui-monospace,monospace;}
+  .btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--sans);font-weight:600;font-size:.9rem;padding:12px 24px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;text-decoration:none;}
+  .btn-pink{background:var(--pink);color:#fff;}
+  .btn-ink{background:transparent;color:var(--ink);border-color:var(--line);}
+  .pill{display:inline-block;font-family:var(--sans);font-size:.74rem;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--cream);margin:0 6px 8px 0;}
+  .card{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--paper);box-shadow:0 8px 22px rgba(35,32,28,.07);}
+  .card .ic{width:42px;height:42px;border-radius:11px;background:linear-gradient(150deg,#F4A276,#E0703F);margin-bottom:12px;}
+  .card h4{font-size:1.25rem;margin-bottom:4px;}
+  .card p{margin:0;font-size:.9rem;color:var(--ink-soft);}
+  .panel-demo{background:var(--panel);color:#fff;border-radius:20px;padding:28px 30px;}
+  .panel-demo .e{color:#9BD6EE;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;}
+  .panel-demo h3{color:#fff;font-size:1.8rem;margin:10px 0 0;}
+
+  /* voice do/don't */
+  .voice{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .voice .col{border:1px solid var(--line);border-radius:14px;padding:20px 22px;background:var(--paper);}
+  .voice .col.do{border-color:#bfe3d3;background:#F3FAF6;}
+  .voice .col.dont{border-color:#f3c9d8;background:#FEF4F8;}
+  .voice h4{font-family:var(--sans);font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;}
+  .voice .do h4{color:var(--green-d);}
+  .voice .dont h4{color:var(--pink);}
+  .voice ul{margin:0;padding-left:18px;}
+  .voice li{margin-bottom:8px;color:var(--ink-soft);font-size:.95rem;}
+  .voice li b{color:var(--ink);}
+  .rules{margin:0;padding-left:20px;}
+  .rules li{margin-bottom:10px;color:var(--ink);}
+  .ex{display:block;margin-top:4px;color:var(--ink-soft);font-size:.9rem;}
+  .ex .x{color:var(--pink);font-weight:600;}
+  .ex .y{color:var(--green-d);font-weight:600;}
+
+  .foot{background:var(--panel);color:#fff;padding:34px 0;font-size:.85rem;}
+  .foot a{color:#fff;}
+  @media(max-width:640px){ .voice{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <span class="eyebrow">Reference · Living document</span>
+    <h1>erin-marie.com style guide<span class="stop">.</span></h1>
+    <p>The look, feel, and voice of the site, in one place, so anything new (a page, a post, a caption) fits right in. Warm, editorial, and personal, never corporate.</p>
+  </div>
+</header>
+
+<!-- COLORS -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">01</span>
+    <h2 class="sec-title">Color</h2>
+    <p class="sec-note">Warm off-white paper, soft ink text, a deep teal-blue for panels and the footer, and a single pink that does all the accent work (links, highlights, the little period after the name).</p>
+
+    <div class="swatches">
+      <div class="sw"><div class="chip" style="background:#23201C"></div><div class="body"><div class="nm">Ink</div><div class="hex">#23201C</div><div class="role">Primary text</div></div></div>
+      <div class="sw"><div class="chip" style="background:#5E574E"></div><div class="body"><div class="nm">Ink soft</div><div class="hex">#5E574E</div><div class="role">Secondary text</div></div></div>
+      <div class="sw"><div class="chip" style="background:#8E867A"></div><div class="body"><div class="nm">Ink faint</div><div class="hex">#8E867A</div><div class="role">Meta, captions</div></div></div>
+      <div class="sw"><div class="chip" style="background:#D6336C"></div><div class="body"><div class="nm">Pink</div><div class="hex">#D6336C</div><div class="role">Accent, links</div></div></div>
+      <div class="sw"><div class="chip" style="background:#E85C95"></div><div class="body"><div class="nm">Pink bright</div><div class="hex">#E85C95</div><div class="role">Highlights</div></div></div>
+      <div class="sw"><div class="chip" style="background:#154C63"></div><div class="body"><div class="nm">Panel</div><div class="hex">#154C63</div><div class="role">Dark panels, footer</div></div></div>
+      <div class="sw"><div class="chip" style="background:#1C6A86"></div><div class="body"><div class="nm">Panel 2</div><div class="hex">#1C6A86</div><div class="role">Panel gradient</div></div></div>
+      <div class="sw"><div class="chip" style="background:#2E89AB"></div><div class="body"><div class="nm">Sky</div><div class="hex">#2E89AB</div><div class="role">Secondary accent</div></div></div>
+      <div class="sw"><div class="chip" style="background:#4E9E84"></div><div class="body"><div class="nm">Green</div><div class="hex">#4E9E84</div><div class="role">Secondary accent</div></div></div>
+      <div class="sw"><div class="chip" style="background:#FBF7F0;border-bottom:1px solid #E6DCCB"></div><div class="body"><div class="nm">Cream</div><div class="hex">#FBF7F0</div><div class="role">Soft panels, pills</div></div></div>
+      <div class="sw"><div class="chip" style="background:#FFFFFF;border-bottom:1px solid #E6DCCB"></div><div class="body"><div class="nm">Paper</div><div class="hex">#FFFFFF</div><div class="role">Page background</div></div></div>
+      <div class="sw"><div class="chip" style="background:#E6DCCB"></div><div class="body"><div class="nm">Line</div><div class="hex">#E6DCCB</div><div class="role">Borders, dividers</div></div></div>
+    </div>
+
+    <div class="sub-label">Driscmas · generation colors</div>
+    <div class="pal-row">
+      <div class="c"><div class="k" style="background:#2f74df"></div><div class="h">#2f74df</div></div>
+      <div class="c"><div class="k" style="background:#ee80ec"></div><div class="h">#ee80ec</div></div>
+      <div class="c"><div class="k" style="background:#5ecb44"></div><div class="h">#5ecb44</div></div>
+      <div class="c"><div class="k" style="background:#f7cc47"></div><div class="h">#f7cc47</div></div>
+      <div class="c"><div class="k" style="background:#916df7"></div><div class="h">#916df7</div></div>
+    </div>
+    <div class="sub-label">Driscmas · Christmas colors</div>
+    <div class="pal-row">
+      <div class="c"><div class="k" style="background:#BC372B"></div><div class="h">#BC372B</div></div>
+      <div class="c"><div class="k" style="background:#239F57"></div><div class="h">#239F57</div></div>
+      <div class="c"><div class="k" style="background:#CBA32B"></div><div class="h">#CBA32B</div></div>
+      <div class="c"><div class="k" style="background:#FBF6F5;border-bottom:1px solid #E6DCCB"></div><div class="h">#FBF6F5</div></div>
+      <div class="c"><div class="k" style="background:#000000"></div><div class="h">#000000</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPE -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">02</span>
+    <h2 class="sec-title">Typography</h2>
+    <p class="sec-note">Two families do everything. <em>Cormorant Garamond</em> (serif) for headings, titles, and italic asides, it gives the warm, editorial feel. <em>Inter</em> (sans) for body copy, labels, buttons, and anything UI. Loaded from Google Fonts.</p>
+
+    <div class="spec"><div class="t-h1">An ideas person who designs.</div><div class="meta">Cormorant Garamond · 500 · clamp(2.4rem–4rem) · letter-spacing -.015em</div></div>
+    <div class="spec"><div class="t-h2">Why I built it</div><div class="meta">Cormorant Garamond · 500 · ~2.2rem</div></div>
+    <div class="spec"><div class="t-h3">The design direction</div><div class="meta">Cormorant Garamond · 500 · ~1.5rem</div></div>
+    <div class="spec"><div class="t-lead">A living family tree that lets everyone see how they're connected.</div><div class="meta">Cormorant Garamond · italic · ~1.6rem · leads &amp; pull-quotes</div></div>
+    <div class="spec"><div class="t-eyebrow">Case study · Building with AI</div><div class="meta">Inter · 600 · .72rem · letter-spacing .2em · uppercase · always pink</div></div>
+    <div class="spec"><div class="t-body">Body copy is Inter at ~1rem with a generous line-height (1.6–1.7) and a reading measure around 60–65 characters. Keep paragraphs short and plain.</div><div class="meta">Inter · 400 · ~1rem · line-height 1.65 · max ~62ch</div></div>
+  </div>
+</section>
+
+<!-- COMPONENTS -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">03</span>
+    <h2 class="sec-title">Components</h2>
+    <p class="sec-note">Soft, rounded, lightly shadowed. Generous radii (12–26px), hairline cream borders, and gentle shadows. Nothing sharp or heavy.</p>
+
+    <div class="comp-grid">
+      <div class="demo">
+        <a class="btn btn-pink" href="#">Email me</a>
+        <div style="height:10px"></div>
+        <a class="btn btn-ink" href="#">← Back to home</a>
+        <div class="cap">.btn-pink / .btn-ink · radius 999px</div>
+      </div>
+      <div class="demo">
+        <span class="pill">Design + build</span>
+        <span class="pill">Why I built it ↓</span>
+        <div class="cap">Pills / tags · cream fill, line border</div>
+      </div>
+      <div class="demo">
+        <div class="card"><div class="ic"></div><h4>Browse by generation</h4><p>Tap a relative to see their family around them.</p></div>
+        <div class="cap">Feature card · gradient icon tile</div>
+      </div>
+      <div class="demo">
+        <div class="panel-demo"><span class="e">Case study · Building with AI</span><h3>Driscmas</h3></div>
+        <div class="cap">Dark panel · hero &amp; footer</div>
+      </div>
+    </div>
+
+    <div class="sub-label">Layout</div>
+    <ul class="rules">
+      <li>Page container maxes at <code>920px</code>; reading columns sit at <code>~680px</code>, centered.</li>
+      <li>Radii: cards <code>14px</code>, images <code>16–18px</code>, panels <code>20–26px</code>, pills/buttons <code>999px</code>.</li>
+      <li>Shadows are soft and low-contrast, e.g. <code>0 8px 22px rgba(35,32,28,.07)</code>.</li>
+      <li>Icons: simple line SVGs (stroke 2) or small gradient tiles; keep them minimal.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">04</span>
+    <h2 class="sec-title">Writing voice</h2>
+    <p class="sec-note">Warm, plain, and first-person, the way Erin-Marie actually talks. Like explaining something to a friend. Never salesy, never "tech bro."</p>
+
+    <div class="voice">
+      <div class="col do">
+        <h4>Do</h4>
+        <ul>
+          <li>Write in <b>plain, everyday words</b> and short sentences.</li>
+          <li>Use <b>first person</b> and contractions (I, we, didn't, it's).</li>
+          <li>Say things the way you'd say them out loud ("the catch was…", "it turned out to be one of the handiest parts").</li>
+          <li>Be warm and human; a little enthusiasm is good.</li>
+          <li>Keep only what's true; describe what the app <b>actually</b> does.</li>
+        </ul>
+      </div>
+      <div class="col dont">
+        <h4>Don't</h4>
+        <ul>
+          <li>No <b>tech-bro / buzzword</b> language: <em>north star, leverage, seamless, robust, supercharge, game-changer, unlock, "it's the next thing," level up.</em></li>
+          <li>No product/design jargon in prose: <em>spec, wireframe, mobile-first, graceful fallback, placeholder, stand-in, reads distinctly, limitation.</em></li>
+          <li>No <b>em dashes</b> (—). Use commas, colons, or periods.</li>
+          <li>Don't repeat "the" in a list: write <em>"the idea, names, photos and design direction,"</em> not "the idea, the names, the photos…"</li>
+          <li>Don't overstate; if something isn't built yet, say so plainly.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sub-label">A few before → after</div>
+    <ul class="rules">
+      <li><span class="ex"><span class="x">✗</span> "That became the north star for how the tree should feel."<br><span class="y">✓</span> (cut it, or "That's the feeling I was going for.")</span></li>
+      <li><span class="ex"><span class="x">✗</span> "It had one real limitation: it was built for desktop… the next version needed to be mobile, first."<br><span class="y">✓</span> "The catch was that it only really worked on a computer… so the next version had to work well on a phone."</span></li>
+      <li><span class="ex"><span class="x">✗</span> "No spec, no wireframe. Just the intent, typed in plain language."<br><span class="y">✓</span> "No plan, no drawings. I just typed what I wanted, in plain words."</span></li>
+      <li><span class="ex"><span class="x">✗</span> "Rebuilt with a mobile-first static site; names in a Cloudflare Pages secret."<br><span class="y">✓</span> "I rebuilt it as a mobile web app. A developer helped add a secret password and keep the names safe in a database."</span></li>
+    </ul>
+
+    <div class="sub-label">Small conventions</div>
+    <ul class="rules">
+      <li>Write <b>RSVP</b> in caps (it's an acronym).</li>
+      <li>Sign off warm and short ("That's a wrap, thanks for reading!").</li>
+      <li>Prefer active voice ("I added…", "Claude suggested…").</li>
+    </ul>
+  </div>
+</section>
+
+<!-- IMAGERY & PRIVACY -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">05</span>
+    <h2 class="sec-title">Imagery &amp; privacy</h2>
+    <p class="sec-note">Photos and screenshots carry the warmth; treat family details with care.</p>
+    <ul class="rules">
+      <li>Real family <b>last names are hidden</b> on the interior design images (the person-card and wireframe shots). Keep that consistent if you add more.</li>
+      <li>The Driscmas app itself is <b>private and password-protected</b>; never link to the live app or publish the password.</li>
+      <li>Images: rounded corners (16–18px), hairline border, soft shadow. Cap width to the image's native size so it stays crisp; don't upscale.</li>
+      <li>Captions are short and in the serif italic voice.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SITE / DEPLOY -->
+<section style="border-bottom:none;">
+  <div class="wrap">
+    <span class="eyebrow">06</span>
+    <h2 class="sec-title">Where it lives</h2>
+    <ul class="rules">
+      <li>erin-marie.com is a static site on <b>GitHub Pages</b> (repo: <code>erin-marie-site</code>).</li>
+      <li>New pages are plain HTML that reuse the tokens above (copy the <code>:root</code> variables and shared component classes).</li>
+      <li>Clean URLs: a file like <code>driscmas.html</code> is served at <code>/driscmas</code>, no extension needed.</li>
+      <li>To publish: commit in GitHub Desktop, push, and the site rebuilds in a minute or two.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">Style guide for erin-marie.com · keep it living, update it as the site grows.</div>
+</footer>
+
+</body>
+</html>
