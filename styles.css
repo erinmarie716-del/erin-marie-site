@@ -1104,3 +1104,11 @@
 .u184{background:#FAF4EC !important;}
 .u185{display:block !important;width:100% !important;height:auto !important;aspect-ratio:2916/1700 !important;border-radius:3px !important;background:#fff url(assets/wildsite/web-scroll.jpg) center/cover no-repeat !important;}
 .fb-hidden{display:none;}
+
+/* Hatch product screens carousel */
+.cs .ht-car .ls-track img{height:min(calc(100vh - 400px),380px);aspect-ratio:auto;width:auto;border:1px solid #D9DCE0;border-radius:6px;box-shadow:none;}
+@media(max-width:760px){.cs .ht-car .ls-track img{height:min(calc(100vh - 340px),260px);}}
+.cs .ht-vis .ls-track img{border:0;box-shadow:0 6px 18px rgba(35,32,28,.14);border-radius:8px;height:min(calc(100vh - 380px),340px);}
+@media(max-width:760px){.cs .ht-vis .ls-track img{height:min(calc(100vh - 340px),230px);}}
+.cs .ht-car .ls-track video{flex:none;height:min(calc(100vh - 400px),380px);width:auto;aspect-ratio:1000/756;border:1px solid #D9DCE0;border-radius:6px;scroll-snap-align:start;display:block;background:#fff;}
+@media(max-width:760px){.cs .ht-car .ls-track video{height:min(calc(100vh - 340px),260px);}}
