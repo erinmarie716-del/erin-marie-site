@@ -1112,3 +1112,6 @@
 @media(max-width:760px){.cs .ht-vis .ls-track img{height:min(calc(100vh - 340px),230px);}}
 .cs .ht-car .ls-track video{flex:none;height:min(calc(100vh - 400px),380px);width:auto;aspect-ratio:1000/756;border:1px solid #D9DCE0;border-radius:6px;scroll-snap-align:start;display:block;background:#fff;}
 @media(max-width:760px){.cs .ht-car .ls-track video{height:min(calc(100vh - 340px),260px);}}
+.cs .ht-car .ls-track figure.ht-fig{flex:none;position:relative;margin:0;scroll-snap-align:start;}
+.cs .ht-car .ls-track figure.ht-fig img,.cs .ht-car .ls-track figure.ht-fig video{scroll-snap-align:none;}
+.cs .ht-fig figcaption{margin-top:8px;font:600 11px/1 'Inter',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--pink);}
