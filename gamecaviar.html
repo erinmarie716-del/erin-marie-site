@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Game Caviar: A dashboard for game developers</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta name="description" content="A case study of the Game Caviar dashboard: one home screen where game developers see projects, RFPs, actions and their team, and act without leaving the page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gamecaviar.css?v=1">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="top">
+  <div class="wrap row">
+    <a class="logo" href="index.html">
+      <img src="assets/erin-marie/logo.png" alt="Erin-Marie" data-fallback>
+      <span class="wordmark g1">Erin-Marie<b>.</b></span>
+    </a>
+    <nav class="nav">
+      <a class="here" href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- POST HEADER -->
+<header class="post-head">
+  <div class="wrap">
+    <div class="head-grid">
+      <div class="head-main">
+        <span class="eyebrow">Case study &middot; UX &amp; product design</span>
+        <h1 class="post-title">Game Caviar: A dashboard for game developers</h1>
+        <div class="byline">
+          <span>Startup</span>
+          <span class="dot">&middot;</span><span>Product designer</span>
+        </div>
+        <p class="lead-p">Game Caviar is a marketspace where game developers and service providers connect. I designed the dashboard developers land on: one home screen to see their projects, RFPs, actions and team, and to act without leaving the page.</p>
+        <nav class="jumps">
+          <a href="#goal">Goal</a>
+          <a href="#process">Process</a>
+          <a href="#challenges">Challenges</a>
+          <a href="#results">Results</a>
+        </nav>
+      </div>
+      <div class="head-media">
+        <img src="assets/gamecaviar/logo.png" alt="Game Caviar logo" class="g2">
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="wrap">
+    <div class="stack g3">
+      <h3>At a glance</h3>
+      <div class="v">
+        <div class="yr">Client</div><div class="d">Game Caviar, a marketspace where game developers and service providers connect. <a href="https://gamecaviar.com" target="_blank" rel="noopener">gamecaviar.com</a></div>
+        <div class="yr">Category</div><div class="d">Startup &middot; UX and product design</div>
+        <div class="yr">Deliverable</div><div class="d">Five dashboard screens, designed with feedback from partners and developers.</div>
+      </div>
+    </div>
+
+    <!-- ABOUT + GOAL -->
+    <div class="col prose">
+      <div class="h2wrap" id="goal">
+        <span class="kicker">The brief</span>
+        <h2>About Game Caviar and the goal</h2>
+      </div>
+      <h3>About Game Caviar</h3>
+      <p class="soft">Game Caviar is a two-sided marketspace. Game developers post what they need, and service providers respond.</p>
+      <h3>The goal</h3>
+      <p class="soft">Create a clean home screen, or dashboard, for game developers to view their projects, RFPs, actions and team information, with the ability to act without leaving the page.</p>
+    </div>
+
+    <!-- PROCESS -->
+    <div class="col prose">
+      <div class="h2wrap" id="process">
+        <span class="kicker">The work</span>
+        <h2>Process</h2>
+      </div>
+      <p class="soft">I designed five screens, shaped by feedback from partners and developers:</p>
+      <ul class="plan">
+        <li>Home, with a summary of projects, RFPs and actions</li>
+        <li>Home with an open table</li>
+        <li>A window to create an RFP</li>
+        <li>A window to send a message</li>
+        <li>A search results module on the Developer List page</li>
+      </ul>
+    </div>
+
+    <div class="pair">
+      <figure class="fig"><img src="assets/gamecaviar/dashboard-home.webp" alt="The Game Caviar home screen: project, RFP and action summaries above a table of RFPs" width="1236" height="1128" class="g4"><figcaption>Home screen.</figcaption></figure>
+      <figure class="fig"><img src="assets/gamecaviar/dashboard-rfp.webp" alt="The Game Caviar request-for-proposal window sliding in over the home screen" width="1236" height="1236" class="g4"><figcaption>The RFP creation window.</figcaption></figure>
+    </div>
+    
+
+    <!-- FLOWS -->
+    <div class="col prose">
+      <div class="h2wrap" id="flows">
+        <span class="kicker">The thinking</span>
+        <h2>Flows and journey</h2>
+      </div>
+      <p class="soft">The first idea was a summary page with links out to separate screens. It grew into a richer home page with a sortable table, so developers could do more in one place.</p>
+      <p class="soft">The home screen supports four kinds of action:</p>
+      <ul class="plan">
+        <li>View summaries</li>
+        <li>View and edit projects</li>
+        <li>Create or edit RFPs</li>
+        <li>Send or respond to messages</li>
+      </ul>
+    </div>
+
+    <!-- CHALLENGES -->
+    <div class="col prose">
+      <div class="h2wrap" id="challenges">
+        <span class="kicker">The hard parts</span>
+        <h2>Challenges</h2>
+      </div>
+      <h3>One table, only the essentials</h3>
+      <p class="soft">Everything a developer needs had to fit in a single table. That meant choosing what to leave out, such as removing Start Date.</p>
+      <h3>A new kind of message</h3>
+      <p class="soft">The new messaging needed to stay separate from the site-wide messaging system. I created a new message entity tied to the developer, the provider and the RFP.</p>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="col prose">
+      <div class="h2wrap" id="results">
+        <span class="kicker">The outcome</span>
+        <h2>Results</h2>
+      </div>
+      <p class="soft">The design was used to present Game Caviar to a prominent game developer for an exclusive partnership, and it was well received.</p>
+      <blockquote class="quote tq">
+        <p>&ldquo;Erin has played a pivotal role in developing the first B2B SAAS Marketplace for the $52B Game Development industry. The website and platform were in development simultaneously, and the platform required a complex, multi-layered, multi-focused interface to support both sides of the marketplace.</p>
+        <p>Erin ramped up in a technical industry, asking thoughtful questions and presenting viable solutions very quickly. With the added complexity of feedback from multiple clients, Erin delivered UX solutions that didn&rsquo;t require explanation despite solving difficult problems with a flexible and holistic approach.</p>
+        <p>We will be continuing to work with Erin-Marie as the product grows and wholeheartedly recommend her UI, UX and web expertise.&rdquo;</p>
+        <span class="who">Jason Smith, CEO, Game Caviar</span>
+      </blockquote>
+    </div>
+  </div>
+</article>
+
+<!-- CLOSING -->
+<section class="cta-sec">
+  <div class="wrap col">
+    <h2>That&rsquo;s a wrap, thanks for reading!</h2>
+    <p>Want to see the live product? Visit Game Caviar.</p>
+    <div class="btnrow g5">
+      <a class="btn btn-pink g6" href="index.html">Home</a>
+      <a class="btn btn-pink g6" href="https://gamecaviar.com" target="_blank" rel="noopener">gamecaviar.com</a>
+      <a class="btn btn-pink g6" href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap row">
+    <div>
+      <div class="wordmark"><img src="assets/site/erin-marie-logo-white.png" alt="Erin-Marie" data-fallback><span class="g7">Erin-Marie<b>.</b></span></div>
+      <div class="meta g8">Brand and web designer &middot; Bay Area, CA</div>
+      <div class="meta"><a href="index.html#contact">Get in touch</a></div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Enlarged image"><button class="lbx" type="button" aria-label="Close">&times;</button><img class="lbimg" alt=""><div class="lbh">Click image to zoom &middot; Esc to close</div></div>
+<script src="gamecaviar.js?v=1"></script>
+</body>
+</html>

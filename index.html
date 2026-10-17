@@ -3,279 +3,176 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Erin-Marie Driscoll · Designer &amp; Product Manager</title>
+<title>Erin-Marie Driscoll · Brand and Web Designer</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
-<meta name="description" content="Erin-Marie, designer and product manager. An ideas person who designs and delivers. 15 years building web products people love.">
+<meta name="description" content="Erin-Marie Driscoll, brand and web designer in the Bay Area. Case studies in brand, web, and product design, 16+ years of making ideas real.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --cream:#FBF7F0; --paper:#FFFFFF; --ink:#23201C; --ink-soft:#5E574E; --ink-faint:#8E867A;
-    --sky:#2E89AB; --sky-d:#1C7CB0; --green:#4E9E84; --green-d:#46883F;
-    --pink:#D6336C; --pink-br:#E85C95; --pink-soft:#FBD0E0;
-    --panel:#154C63; --panel-2:#1C6A86; --line:#E6DCCB;
-    --serif:'Cormorant Garamond',Georgia,serif; --sans:'Inter',-apple-system,sans-serif;
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;}
-  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:repeating-linear-gradient(90deg,rgba(46,137,171,.06) 0,rgba(46,137,171,.06) 1px,transparent 1px,transparent 5px);}
-  .wrap{max-width:920px;margin:0 auto;padding:0 28px;}
-  a{color:var(--pink);text-decoration:none;}
-  h1,h2{font-family:var(--serif);font-weight:500;line-height:1.06;margin:0;}
-  em{font-style:italic;color:var(--pink);}
-  .eyebrow{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);}
-  .label{font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#23201C;}
-
-  /* top bar */
-  .top{border-bottom:0.75px solid rgba(35,32,28,.45);}
-  .top .row{display:flex;align-items:center;justify-content:space-between;height:74px;}
-  .logo{display:flex;align-items:center;}
-  .logo img{height:48px;width:auto;display:block;}
-  .logo .wordmark{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--ink);}
-  .logo .wordmark b{color:var(--pink);}
-  .top .contact{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px;text-decoration-color:var(--pink);}
-
-  /* hero panel */
-  .hero{padding:38px 0 0;}
-  .panel{background:var(--panel);border-radius:26px;color:var(--cream);overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;}
-  .panel .copy{padding:54px 50px;}
-  .panel .photo{display:flex;align-items:center;justify-content:center;padding:40px;}
-  .panel .circle{position:relative;width:240px;height:240px;border-radius:50%;overflow:hidden;border:5px solid rgba(255,255,255,.2);box-shadow:0 16px 40px rgba(0,0,0,.3);background:linear-gradient(160deg,var(--panel-2),#0E3A4D);}
-  .panel .circle img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
-  .panel .circle .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#cfe6f0;text-align:center;padding:16px;}
-  .panel .eyebrow{color:#9BD6EE;display:block;margin-bottom:14px;font-size:.66rem;letter-spacing:.12em;white-space:nowrap;}
-  .panel h1{color:#FFFFFF;font-size:clamp(2.1rem,5vw,3.3rem);}
-  .panel h1 .stop{color:var(--pink-br);}
-  .panel .sub{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:#F7F0E4;margin:14px 0 26px;max-width:30ch;}
-  .panel .cta{display:flex;gap:14px;flex-wrap:wrap;}
-  .btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--sans);font-weight:600;font-size:.92rem;padding:13px 26px;border-radius:999px;border:1.5px solid transparent;cursor:pointer;}
-  .btn-pink{background:var(--pink);color:#fff;}
-  .btn-cream{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
-  .btn-ink{background:transparent;color:var(--ink);border-color:var(--line);}
-
-  /* summary */
-  .summary{padding:26px 0;}
-  .summary .label{display:block;margin-bottom:14px;}
-  .summary p{font-family:var(--serif);font-size:1.7rem;line-height:1.4;color:var(--ink);max-width:34ch;margin:0;}
-  .summary p:first-of-type{max-width:none;}
-  .summary .lead{max-width:62ch;}
-
-  /* path timeline */
-  .path{padding:26px 0;}
-  .path .label{display:block;margin-bottom:4px;}
-  .timeline{list-style:none;display:flex;justify-content:space-between;align-items:flex-start;margin:22px 0 0;padding:0 4px;position:relative;}
-  .timeline::before{content:"";position:absolute;left:7%;right:7%;top:12px;height:2px;border-radius:2px;z-index:0;background:linear-gradient(90deg,var(--sky),var(--green),var(--pink-br),var(--pink));}
-  .timeline li{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;opacity:0;transform:translateY(8px);animation:rise .5s ease forwards;}
-  .timeline li:nth-child(1){animation-delay:.05s;}
-  .timeline li:nth-child(2){animation-delay:.13s;}
-  .timeline li:nth-child(3){animation-delay:.21s;}
-  .timeline li:nth-child(4){animation-delay:.29s;}
-  .timeline li:nth-child(5){animation-delay:.37s;}
-  .timeline li:nth-child(6){animation-delay:.45s;}
-  .timeline .node{width:26px;height:26px;border-radius:50%;background:var(--paper);border:3px solid var(--sky);box-shadow:0 3px 10px rgba(35,32,28,.13);}
-  .timeline li:nth-child(2) .node{border-color:var(--green);}
-  .timeline li:nth-child(3) .node{border-color:var(--panel-2);}
-  .timeline li:nth-child(4) .node{border-color:var(--sky-d);}
-  .timeline li:nth-child(5) .node{border-color:var(--pink-br);}
-  .timeline .step{font-family:var(--serif);font-size:1.06rem;line-height:1.2;color:var(--ink-soft);margin-top:12px;}
-  .timeline .is-now .node{width:30px;height:30px;margin-top:-2px;background:var(--pink);border-color:var(--pink);box-shadow:0 6px 16px rgba(214,51,108,.4);}
-  .timeline .is-now .step{color:var(--pink);font-weight:600;}
-  @keyframes rise{to{opacity:1;transform:translateY(0);}}
-  @media(prefers-reduced-motion:reduce){.timeline li{animation:none;opacity:1;transform:none;}}
-
-  /* links row */
-  .links{padding:26px 0;}
-  .links .label{display:block;text-align:center;margin-bottom:26px;}
-  .grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:1fr;gap:18px;}
-  .lcard{display:flex;flex-direction:column;align-items:flex-start;min-width:0;min-height:160px;border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;background:var(--paper);box-shadow:0 8px 22px rgba(35,32,28,.07);transition:transform .15s ease,box-shadow .15s ease;}
-  .lcard:hover{text-decoration:none;transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,32,28,.13);}
-  .lcard .dotmark{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;flex:none;}
-  .lcard .dotmark svg{width:22px;height:22px;}
-  .lcard .nm{font-family:var(--serif);font-size:1.3rem;line-height:1.15;color:var(--ink);min-height:2.3em;}
-  .lcard .go{font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;color:var(--pink);font-weight:600;margin-top:auto;padding-top:8px;overflow-wrap:anywhere;}
-  .d1{background:linear-gradient(150deg,#F4A276,#E0703F);}
-  .d2{background:linear-gradient(150deg,#34618C,#1B3A5C);}
-  .d3{background:linear-gradient(150deg,#3B8FD9,#0A66C2);}
-  .d4{background:linear-gradient(150deg,#69B69A,#4E9E84);}
-
-  /* family tree feature */
-  .ft-sec{padding:26px 0;}
-  .ft-sec .label{display:block;text-align:center;margin-bottom:22px;}
-  .ft{margin:0;}
-  .ft .frame{border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 12px 36px rgba(35,32,28,.12);aspect-ratio:16/7;display:block;}
-  .ft .frame img{width:100%;height:100%;object-fit:cover;display:block;}
-  .ft .ph{width:100%;height:100%;background:linear-gradient(150deg,var(--panel-2),#0E3A4D);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#cfe6f0;text-align:center;padding:24px;}
-  .ft .ph .big{font-family:var(--serif);font-size:2rem;color:#fff;}
-  .ft figcaption{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--ink-soft);text-align:center;margin-top:16px;}
-  .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;align-items:start;}
-  .shot{margin:0;max-width:100%;}
-  .dots{display:none;}
-  .dot{width:8px;height:8px;border-radius:50%;background:rgba(35,32,28,.18);}
-  .shot img{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line);box-shadow:0 12px 32px rgba(35,32,28,.13);}
-  .shot-ph{width:100%;aspect-ratio:9/16;border-radius:18px;background:linear-gradient(160deg,var(--panel-2),#0E3A4D);display:flex;align-items:center;justify-content:center;color:#cfe6f0;text-align:center;font-size:.82rem;padding:18px;}
-  .shot figcaption{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--ink-soft);text-align:center;margin-top:12px;}
-
-  /* footer */
-  .foot{background:var(--panel);padding:46px 0 56px;color:#fff;}
-  .foot .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;align-items:center;}
-  .foot .wordmark{font-family:var(--serif);font-size:1.4rem;font-weight:600;color:#fff;}
-  .foot .wordmark img{height:44px;width:auto;display:block;}
-  .foot .wordmark b{color:#fff;}
-  .foot .meta{color:rgba(255,255,255,.82);font-size:.9rem;}
-  .foot a{color:#fff;}
-
-  @media(max-width:760px){
-    .panel{grid-template-columns:1fr;}
-    .panel .copy{padding:38px 28px;}
-    .panel .photo{order:-1;padding:34px 28px 8px;}
-    .panel .circle{width:190px;height:190px;}
-    .grid{grid-template-columns:repeat(2,1fr);}
-    .eb-dot{display:none;}
-    .eb-role{display:block;}
-    .shots{display:flex;grid-template-columns:none;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:10px;}
-    .shot{flex:0 0 80%;scroll-snap-align:center;}
-    .dots{display:flex;justify-content:center;gap:9px;margin-top:14px;}
-    .dot{cursor:pointer;transition:background .2s,transform .2s;}
-    .dot.active{background:var(--pink);transform:scale(1.3);}
-    .summary p{font-size:1.4rem;}
-    .ft .frame{aspect-ratio:4/3;}
-    .timeline{flex-direction:column;align-items:flex-start;padding:2px 0 0 2px;}
-    .timeline::before{left:12px;right:auto;top:8px;bottom:8px;width:2px;height:auto;background:linear-gradient(180deg,var(--sky),var(--green),var(--pink-br),var(--pink));}
-    .timeline li{flex:none;flex-direction:row;align-items:center;gap:14px;width:100%;padding:7px 0;text-align:left;}
-    .timeline .node{width:22px;height:22px;}
-    .timeline .step{margin-top:0;font-size:1.12rem;}
-    .timeline .is-now .node{width:26px;height:26px;margin-top:0;margin-left:-2px;}
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600;700&family=Rock+Salt&family=Playfair+Display:ital,wght@0,400;1,400&family=Birthstone+Bounce:wght@400;500&family=DM+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&family=Lustria&family=Anton&family=Cookie&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
 </head>
 <body>
 
-<!-- TOP BAR -->
-<header class="top">
-  <div class="wrap row">
-    <a class="logo" href="https://erin-marie.com">
-      <!-- When your black + star logo is ready, save it as erin-marie-logo.png and it appears here. -->
-      <img src="assets/erin-marie-logo.png" alt="Erin-Marie Driscoll" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';">
-      <span class="wordmark" style="display:none;">Erin-Marie<b>.</b></span>
-    </a>
-    <a class="contact" href="mailto:erinmarie716@gmail.com">Contact</a>
+<svg width="0" height="0" aria-hidden="true" focusable="false" class="u1"><defs><clipPath id="em-star" clipPathUnits="objectBoundingBox"><path d="M0.47,0.035 Q0.5,0 0.53,0.035 C0.55,0.24 0.76,0.45 0.965,0.47 Q1,0.5 0.965,0.53 C0.76,0.55 0.55,0.76 0.53,0.965 Q0.5,1 0.47,0.965 C0.45,0.76 0.24,0.55 0.035,0.53 Q0,0.5 0.035,0.47 C0.24,0.45 0.45,0.24 0.47,0.035 Z"/></clipPath></defs></svg>
+
+
+<!-- HEADER -->
+<header class="post-head">
+  <div class="wrap">
+    <div class="head-grid">
+      <div class="head-main">
+        <h1 class="post-title"><span class="w">Brand</span> <span class="w">and</span> <span class="w">Web</span> <span class="w">Designer</span></h1>
+        <p class="lead-p u2">I’m Erin-Marie, a designer with 16+ years of experience in branding, content strategy, and digital design. I love thinking through the user journey, business goals, and brand story—and pairing them with a visual style that <em class="u3">evokes emotion and inspires</em>.</p>
+        <p class="lead-p u4">I’ve worked at both large companies and small startups, wearing many hats: content strategist, product manager, UX operations lead. Companies include Kaiser Permanente, Wells Fargo, and UCSF. I also co-founded Hatch My House, a home gift registry that grew to 3,000+ users.</p>
+        <p class="lead-p u4">Today, I run <a href="https://wildsite.co/" target="_blank" rel="noopener" class="u5">Wildsite Co.</a>, helping small businesses elevate their brand online.</p>
+        <p class="lead-p u6">I’m interested in joining a team as a brand and web strategist or design project/operations manager.</p>
+        <a class="btn btn-pink u7" href="#contact">Contact Erin-Marie</a>
+      </div>
+      <div class="head-media u8" id="about-photo">
+        <div class="photo-wrap"><span class="photo-bg" aria-hidden="true"></span><svg class="pstar u9" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5c.6 4.9 2.6 8.5 10.5 10.5C14.6 14 12.6 17.6 12 22.5 11.4 17.6 9.4 14 1.5 12 9.4 10 11.4 6.4 12 1.5z" fill="#154C63"/></svg><svg class="pstar u10" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5c.6 4.9 2.6 8.5 10.5 10.5C14.6 14 12.6 17.6 12 22.5 11.4 17.6 9.4 14 1.5 12 9.4 10 11.4 6.4 12 1.5z" fill="#154C63"/></svg><svg class="pstar u11" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5c.6 4.9 2.6 8.5 10.5 10.5C14.6 14 12.6 17.6 12 22.5 11.4 17.6 9.4 14 1.5 12 9.4 10 11.4 6.4 12 1.5z" fill="#D6336C"/></svg><svg class="pstar u12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5c.6 4.9 2.6 8.5 10.5 10.5C14.6 14 12.6 17.6 12 22.5 11.4 17.6 9.4 14 1.5 12 9.4 10 11.4 6.4 12 1.5z" fill="#D6336C"/></svg><svg class="pstar u13" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.5c.6 4.9 2.6 8.5 10.5 10.5C14.6 14 12.6 17.6 12 22.5 11.4 17.6 9.4 14 1.5 12 9.4 10 11.4 6.4 12 1.5z" fill="#154C63"/></svg><img src="assets/erin-marie/portrait.jpg" alt="Erin-Marie Driscoll">
+        <svg class="star-ring" viewBox="0 0 262 262" aria-hidden="true" focusable="false"><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(249.0 131.0) scale(2.2)" fill="#23201C" class="rs u14"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(247.5 149.5) scale(2.2)" fill="#23201C" class="rs u15"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(243.2 167.5) scale(2.2)" fill="#23201C" class="rs u16"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(236.1 184.6) scale(2.2)" fill="#23201C" class="rs u17"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(226.5 200.4) scale(2.2)" fill="#23201C" class="rs u18"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(214.4 214.4) scale(2.2)" fill="#23201C" class="rs u19"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(200.4 226.5) scale(2.2)" fill="#23201C" class="rs u20"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(184.6 236.1) scale(2.2)" fill="#23201C" class="rs u21"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(167.5 243.2) scale(2.2)" fill="#23201C" class="rs u22"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(149.5 247.5) scale(2.2)" fill="#23201C" class="rs u23"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(131.0 249.0) scale(2.2)" fill="#23201C" class="rs u24"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(112.5 247.5) scale(2.2)" fill="#23201C" class="rs u25"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(94.5 243.2) scale(2.2)" fill="#23201C" class="rs u26"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(77.4 236.1) scale(2.2)" fill="#23201C" class="rs u27"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(61.6 226.5) scale(2.2)" fill="#23201C" class="rs u28"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(47.6 214.4) scale(2.2)" fill="#23201C" class="rs u29"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(35.5 200.4) scale(2.2)" fill="#23201C" class="rs u30"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(25.9 184.6) scale(2.2)" fill="#23201C" class="rs u31"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(18.8 167.5) scale(2.2)" fill="#23201C" class="rs u32"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(14.5 149.5) scale(2.2)" fill="#23201C" class="rs u33"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(13.0 131.0) scale(2.2)" fill="#23201C" class="rs u34"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(14.5 112.5) scale(2.2)" fill="#23201C" class="rs u35"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(18.8 94.5) scale(2.2)" fill="#23201C" class="rs u36"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(25.9 77.4) scale(2.2)" fill="#23201C" class="rs u37"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(35.5 61.6) scale(2.2)" fill="#23201C" class="rs u38"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(47.6 47.6) scale(2.2)" fill="#23201C" class="rs u39"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(61.6 35.5) scale(2.2)" fill="#23201C" class="rs u40"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(77.4 25.9) scale(2.2)" fill="#23201C" class="rs u41"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(94.5 18.8) scale(2.2)" fill="#23201C" class="rs u42"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(112.5 14.5) scale(2.2)" fill="#23201C" class="rs u43"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(131.0 13.0) scale(2.2)" fill="#23201C" class="rs u44"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(149.5 14.5) scale(2.2)" fill="#23201C" class="rs u45"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(167.5 18.8) scale(2.2)" fill="#23201C" class="rs u46"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(184.6 25.9) scale(2.2)" fill="#23201C" class="rs u47"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(200.4 35.5) scale(2.2)" fill="#23201C" class="rs u48"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(214.4 47.6) scale(2.2)" fill="#23201C" class="rs u49"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(226.5 61.6) scale(2.2)" fill="#23201C" class="rs u50"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(236.1 77.4) scale(2.2)" fill="#23201C" class="rs u51"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(243.2 94.5) scale(2.2)" fill="#23201C" class="rs u52"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(247.5 112.5) scale(2.2)" fill="#23201C" class="rs u53"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(248.6 140.3) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(245.7 158.5) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(240.0 176.2) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(231.6 192.7) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(220.7 207.6) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(207.6 220.7) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(192.7 231.6) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(176.2 240.0) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(158.5 245.7) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(140.3 248.6) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(121.7 248.6) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(103.5 245.7) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(85.8 240.0) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(69.3 231.6) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(54.4 220.7) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(41.3 207.6) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(30.4 192.7) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(22.0 176.2) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(16.3 158.5) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(13.4 140.3) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(13.4 121.7) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(16.3 103.5) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(22.0 85.8) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(30.4 69.3) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(41.3 54.4) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(54.4 41.3) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(69.3 30.4) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(85.8 22.0) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(103.5 16.3) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(121.7 13.4) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(140.3 13.4) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(158.5 16.3) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(176.2 22.0) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(192.7 30.4) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(207.6 41.3) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(220.7 54.4) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(231.6 69.3) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(240.0 85.8) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(245.7 103.5) scale(2.2)" fill="#23201C"/><path d="M0,-1C.07,-.3 .3,-.07 1,0 .3,.07 .07,.3 0,1 -.07,.3 -.3,.07 -1,0 -.3,-.07 -.07,-.3 0,-1Z" transform="translate(248.6 121.7) scale(2.2)" fill="#23201C"/></svg>
+        <img class="photo-logo" src="assets/erin-marie/logo.png" alt=""></div>
+        <div class="info-card">
+          <div class="ic-links">
+            <a href="https://www.linkedin.com/in/erinmarie716/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#fff"/><circle cx="6.6" cy="6.9" r="1.9" fill="#154C63"/><rect x="5" y="9.7" width="3.2" height="9.2" fill="#154C63"/><path fill="#154C63" d="M10.2 9.7h3v1.4c.5-.9 1.6-1.6 3.1-1.6 2.9 0 3.5 1.9 3.5 4.4v5H16.6v-4.5c0-1.1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3v4.6h-3.2z"/></svg>LinkedIn</a>
+            <a href="https://wildsite.substack.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="2.5" width="18" height="2.6" fill="#fff"/><rect x="3" y="7" width="18" height="2.6" fill="#fff"/><path fill="#fff" d="M3 11.5h18V22l-9-5.2L3 22z"/></svg>Substack</a>
+          </div>
+          <div class="ic-block"><span class="ic-label">Tech</span><p>Figma · Claude · ChatGPT · Flora · Midjourney · Adobe Suite · Canva · Framer · Squarespace · GoHighLevel · Drupal · GitHub</p></div>
+          <div class="ic-block"><span class="ic-label">Skills</span><p>Web Design · Branding · Content Strategy · Front-End Development · UX Design · Product Design · Design Operations · Product Management</p></div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
+
+<!-- SELECTED WORK -->
+<section class="work" id="work">
+  <div class="work-fade" aria-hidden="true"></div>
+  <video class="work-bg" poster="assets/site/work-bg.jpg" muted playsinline preload="auto" aria-hidden="true" tabindex="-1"><source src="assets/site/work-bg.mp4" type="video/mp4"></video>
   <div class="wrap">
-    <div class="panel">
-      <div class="copy">
-        <span class="eb-role"><span class="eyebrow"> Web and product designer</span></span>
-        <h1>An ideas person<br>who designs<br>& delivers<span class="stop">.</span></h1>
-        <p class="sub">Fifteen years turning the spark into a real thing.</p>
-        <div class="cta">
-          <a class="btn btn-pink" href="mailto:erinmarie716@gmail.com">Email me</a>
+    <div class="sec-head rv">
+      <h2>Portfolio</h2>
+      <div class="rail-nav"><button type="button" data-rail-prev aria-label="Scroll left">&larr;</button><button type="button" data-rail-next aria-label="Scroll right">&rarr;</button></div>
+    </div>
+    <!-- Brand case studies. Keep the "coming soon" pills until each deck is live. -->
+    <div class="rail-wrap">
+    <div class="wgrid rail" id="work-rail">
+      <article class="wmini rv" data-deck="aliotos" tabindex="0" role="link" aria-label="Alioto's Focacceria case study, coming soon">
+        <div class="tile t-ali u54"><img class="logo u55" src="assets/aliotos/logo-red.svg" alt="Alioto&rsquo;s Focacceria logo"></div>
+        <div class="body"><span class="tag">Brand &amp; Website</span><h3>Alioto&rsquo;s Focacceria</h3><p>Identity and website for an Italian sandwich shop, with a custom logo.</p><a class="site" href="https://www.aliotosfocacceria.com" target="_blank" rel="noopener">aliotosfocacceria.com <span class="ext">&#8599;</span></a></div>
+      </article>
+      <article class="wmini rv" data-deck="band" tabindex="0" role="link" aria-label="Open the BAND case study">
+        <div class="tile u56"><img class="logo" src="assets/band/logo-white.png" alt="BAND logo"></div>
+        <div class="body">
+          <span class="tag">Brand &amp; Website</span>
+          <h3>BAND</h3>
+          <p>Identity and website for a California campaign to end corporal punishment of children.</p>
+          <a class="site" href="https://bandtogetherca.com" target="_blank" rel="noopener">bandtogetherca.com <span class="ext">&#8599;</span></a>
+          <div class="chips"><span>Project</span><span>Color</span><span>Type &amp; Voice</span><span>Visuals</span><span>Website</span><span>Social</span></div>
+        </div>
+      </article>
+      <article class="wmini rv" data-deck="wildsite" tabindex="0" role="link" aria-label="Open the Wildsite case study">
+        <div class="tile u57"><img class="logo u58" src="assets/wildsite/logo.png" alt="Wildsite logo"></div>
+        <div class="body">
+          <span class="tag">Brand &amp; Website</span>
+          <h3>Wildsite Co.</h3>
+          <p>Brand and website for a design studio that helps small businesses elevate their brand online.</p>
+          <a class="site" href="https://wildsite.co" target="_blank" rel="noopener">wildsite.co <span class="ext">&#8599;</span></a>
+          <div class="chips"><span>Project</span><span>Color</span><span>Type &amp; Voice</span><span>Visuals</span><span>Website</span></div>
+        </div>
+      </article>
+      <article class="wmini rv" data-deck="mom" tabindex="0" role="link" aria-label="Open the Mom’s Morning case study">
+        <div class="tile u59"><img class="logo" src="assets/mom/logo.png" alt="Mom&rsquo;s Morning logo"></div>
+        <div class="body"><span class="tag">Brand &amp; UX Design</span><h3>Mom&rsquo;s Morning</h3><p>Brand and app design for a self-care app that rewards moms.</p><a class="site" href="https://www.figma.com/proto/fhMKckvoJRESlDy5UpJlBs/Mom-s-Morning?node-id=106-36&amp;p=f&amp;viewport=347%2C549%2C0.25&amp;t=I2AAYmVvXS0YUoai-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=106%3A36&amp;page-id=106%3A35" target="_blank" rel="noopener">View prototype <span class="ext">&#8599;</span></a></div>
+      </article>
+      <article class="wmini rv" data-deck="hatch" tabindex="0" role="link" aria-label="Open the Hatch My House case study">
+        <div class="tile u60"><img class="logo u61" src="assets/hatch/wordmark.png" alt="Hatch My House logo"></div>
+        <div class="body"><span class="tag">Brand &amp; Product Design</span><h3>Hatch My House</h3><p>Brand and product design for a gift registry that grew to 3K+ users and $3.5M in gift sales.</p><a class="site" href="https://www.facebook.com/hatchmyhouse" target="_blank" rel="noopener">Hatch My House on Facebook <span class="ext">&#8599;</span></a></div>
+      </article>
+      <article class="wmini rv" data-deck="erin-marie" tabindex="0" role="link" aria-label="Open the Erin-Marie brand case study">
+        <div class="tile tile-em"><img class="logo u62" src="assets/erin-marie/logo.png" alt="Erin-Marie logo"></div>
+        <div class="body"><span class="tag">Brand &amp; Website</span><h3>Erin-Marie</h3><p>Brand and website for a professional design portfolio.</p>
+        <div class="chips"><span>Project</span><span>Color</span><span>Type &amp; Voice</span><span>Visuals</span></div></div>
+      </article>
+      <article class="wmini rv" data-deck="loveschool" tabindex="0" role="link" aria-label="Open the LoveSchool case study">
+        <div class="tile u63"><img class="logo" src="assets/loveschool/logo-white.png" alt="LoveSchool logo"></div>
+        <div class="body"><span class="tag">App Store Design</span><h3>LoveSchool</h3><p>App Store images for an online program that helps people overcome insecure attachment.</p>
+        <div class="chips"><span>Project</span><span>Color</span><span>Visuals</span><span>App Store</span></div></div>
+      </article>
+      <article class="wmini rv" data-deck="kitchentable" tabindex="0" role="link" aria-label="Open The Kitchen Table Reno case study">
+        <div class="tile u64"><img class="logo u65" src="assets/ktr/logo-white.png" alt="The Kitchen Table Reno logo"></div>
+        <div class="body"><span class="tag">Website</span><h3>The Kitchen Table Reno</h3><p>Website for an open-concept Italian restaurant in Reno, Nevada.</p><a class="site" href="https://www.thekitchentablereno.com/" target="_blank" rel="noopener">thekitchentablereno.com <span class="ext">&#8599;</span></a><div class="chips"><span>Project</span><span>Color</span><span>Type &amp; Voice</span><span>Visuals</span><span>Website</span></div></div>
+      </article>
+      <article class="wmini rv" data-deck="reframecbt" tabindex="0" role="link" aria-label="Open the ReframeCBT case study">
+        <div class="tile t-ref u66"><img class="logo" src="assets/reframe/logo.png" alt="Reframe CBT logo"></div>
+        <div class="body"><span class="tag">Brand &amp; Website</span><h3>ReframeCBT</h3><p>Brand and website for a CBT therapy practice serving college students and adults in California.</p></div>
+      </article>
+      <article class="wmini rv" data-deck="driscmas" tabindex="0" role="link" aria-label="Open the Driscmas case study">
+        <div class="tile t-dris"><img src="assets/driscmas/cover.jpg" alt="Driscmas title in white script on a red polka-dot background"></div>
+        <div class="body"><span class="tag">Product Design</span><h3>Driscmas</h3><p>Product design for a mobile-first family tree of 119 relatives across four generations.</p><span class="soon">Case study coming soon</span></div>
+      </article>
+      <article class="wmini rv" data-deck="gamecaviar" tabindex="0" role="link" aria-label="Open the Game Caviar case study">
+        <div class="tile t-game u59"><img class="logo" src="assets/gamecaviar/logo.png" alt="Game Caviar logo"></div>
+        <div class="body"><span class="tag">Website &amp; Product Design</span><h3>Game Caviar</h3><p>Website and dashboard design for a partnerships platform for game developers.</p><span class="soon">Case study coming soon</span></div>
+      </article>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- SUBSTACK -->
+<section class="posts" id="writing">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>On Substack</h2>
+    </div>
+    <div class="pgrid rv" id="posts">
+      <!-- Three featured posts, chosen by hand. Not filled from posts.json. -->
+      <a class="post" href="https://wildsite.substack.com/p/web-design-trends-that-are-cool-enough" target="_blank" rel="noopener">
+        <div class="cov"><img src="assets/site/substack-trends.jpg" alt=""></div>
+        <div class="pb"><span class="date">Sep 4, 2026</span><h3>Web Design Trends That Are Cool But Not Too Much</h3><p>How to look hip but not like AI slop&mdash;without lots of $$$ or talent</p></div>
+      </a>
+      <a class="post" href="https://wildsite.substack.com/p/everything-ive-built-in-4-months" target="_blank" rel="noopener">
+        <div class="cov"><img src="assets/site/substack-claude.jpg" alt=""></div>
+        <div class="pb"><span class="date">Aug 25, 2026</span><h3>Everything I&rsquo;ve Built in 4 Months with Claude</h3><p>What&rsquo;s possible for me is possible for you. And when in doubt, just ask Claude.</p></div>
+      </a>
+      <a class="post" href="https://wildsite.substack.com/p/websites-in-the-ai-era" target="_blank" rel="noopener">
+        <div class="cov"><img src="assets/site/substack-ai-era.jpg" alt=""></div>
+        <div class="pb"><span class="date">Aug 18, 2026</span><h3>The Websites That Will Thrive in the AI Era</h3><p>Get ready&#128131;</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec" id="contact">
+  <div class="wrap rv">
+    <div class="panel2">
+      <div>
+        <h2>Contact Me!</h2>
+        <p class="u67">I’d love to connect and explore opportunities to work with you.</p>
+        <p>Complete the contact form, and I’ll send you my resume and answer any questions you have.</p>
+        <div class="c-social">
+          <a href="https://www.linkedin.com/in/erinmarie716/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="3" fill="#D6336C"/><circle cx="6.6" cy="6.9" r="1.9" fill="#fff"/><rect x="5" y="9.7" width="3.2" height="9.2" fill="#fff"/><path fill="#fff" d="M10.2 9.7h3v1.4c.5-.9 1.6-1.6 3.1-1.6 2.9 0 3.5 1.9 3.5 4.4v5H16.6v-4.5c0-1.1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3v4.6h-3.2z"/></svg></a>
+          <a href="https://wildsite.substack.com" target="_blank" rel="noopener" aria-label="Substack"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="2.5" width="18" height="2.6" fill="#D6336C"/><rect x="3" y="7" width="18" height="2.6" fill="#D6336C"/><path fill="#D6336C" d="M3 11.5h18V22l-9-5.2L3 22z"/></svg></a>
         </div>
       </div>
-      <div class="photo">
-        <div class="circle">
-          <!-- Save a portrait as erin-marie.jpg to show it here (a square or head-and-shoulders crop works best). -->
-          <img src="assets/erin-marie.jpg" alt="Erin-Marie Driscoll" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-          <div class="ph" style="display:none;">
-            <span style="font-family:var(--serif);font-size:1.25rem;color:#fff;">Your photo</span>
-            <span style="font-size:.72rem;margin-top:4px;opacity:.85;">erin-marie.jpg</span>
-          </div>
-        </div>
+      <div class="form">
+        <form id="cform" action="https://formspree.io/f/xnpjondd" method="POST">
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="u68">
+          <button type="submit" class="btn btn-pink">Send</button>
+          <p class="cf-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- SUMMARY -->
-<section class="summary">
-  <div class="wrap">
-    <span class="label">In short</span>
-    <p class="lead">I'm a web and product designer with <em>15+ years</em> designing and producing websites and web apps. I love all
-aspects of design, especially thinking through the user journey and pairing it with visual elements that
-<em>inspire</em>. I enjoy getting the small, nuanced details right. </p><br /><p class="lead">I have experience in design and product
-management, recently leading product areas at <em>Kaiser Permanente</em>. Currently, I run <em><a href="httos://wildsite.co">Wildsite Co.</a></em>, my design studio, where I play with color, font, and animations.</p>
-     <br /> <p class="lead" style="font-size:1.25rem;margin-top:.6em;max-width:none;">Other sites I've worked on include Wells&nbsp;Fargo, Tufts&nbsp;Medical&nbsp;Center, University of California San Francisco, and Hatch&nbsp;My&nbsp;House, a startup I co-founded and grew to 3K+ users and $3.5M in gift transactions.</p>
-  </div>
-</section>
-
-<!-- PATH -->
-<section class="path">
-  <div class="wrap">
-    <span class="label">From content to ux product to design</span>
-    <ol class="timeline">
-      <li><span class="node"></span><span class="step">Content</span></li>
-      <li><span class="node"></span><span class="step">Design/Development</span></li>
-      <li><span class="node"></span><span class="step">Content&nbsp;Ops</span></li>
-      <li><span class="node"></span><span class="step">UX</span></li>
-      <li><span class="node"></span><span class="step">Product Mgmt</span></li>
-      <li class="is-now"><span class="node"></span><span class="step">Web/Product Design</span></li>
-    </ol>
-  </div>
-</section>
-
-<!-- LINKS -->
-<section class="links">
-  <div class="wrap">
-    <span class="label">Projects and more</span>
-    <div class="grid">
-      <a class="lcard" href="https://wildsite.co" target="_blank">
-        <span class="dotmark d1"><svg viewBox="0 0 24 24" fill="#fff"><path d="M13 6.5L13.88 11.12 18.5 12 13.88 12.88 13 17.5 12.12 12.88 7.5 12 12.12 11.12Z"/><path d="M6.5 3.5L6.98 6.02 9.5 6.5 6.98 6.98 6.5 9.5 6.02 6.98 3.5 6.5 6.02 6.02Z"/><path d="M18.5 3.2L18.87 5.13 20.8 5.5 18.87 5.87 18.5 7.8 18.13 5.87 16.2 5.5 18.13 5.13Z"/><path d="M7.5 16.7L7.87 18.63 9.8 19 7.87 19.37 7.5 21.3 7.13 19.37 5.2 19 7.13 18.63Z"/></svg></span>
-        <span class="nm">Wildsite Co.</span>
-        <span class="go">wildsite.co →</span>
-      </a>
-      <a class="lcard" href="https://bandtogetherca.com" target="_blank">
-        <span class="dotmark d2"><svg viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="4.3" r="3.4" stroke="#1B3A5C" stroke-width="1.3"/><path d="M12 21.5l-1.3-1.18C6.1 16.3 3.3 13.85 3.3 10.8 3.3 8.35 5.2 6.45 7.6 6.45c1.4 0 2.74.65 3.64 1.67l.76.86.76-.86C13.66 7.1 15 6.45 16.4 6.45c2.4 0 4.3 1.9 4.3 4.35 0 3.05-2.8 5.5-7.4 9.52L12 21.5z"/></svg></span>
-        <span class="nm">Band Together</span>
-        <span class="go">bandtogetherca.com →</span>
-      </a>
-      <a class="lcard" href="https://www.linkedin.com/in/erinmarie716/" target="_blank">
-        <span class="dotmark d3"><svg viewBox="0 0 24 24" fill="#fff"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.3-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9z"/></svg></span>
-        <span class="nm">LinkedIn</span>
-        <span class="go">connect →</span>
-      </a>
-      <a class="lcard" href="https://wildsite.substack.com" target="_blank">
-        <span class="dotmark d4"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></svg></span>
-        <span class="nm">Substack</span>
-        <span class="go">subscribe →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FAMILY TREE -->
-<section class="ft-sec">
-  <div class="wrap">
-    <span class="label">A little something I built with Claude</span>
-    <p style="text-align:center;max-width:60ch;margin:0 auto 30px;color:var(--ink-soft);">I designed and built an interactive family tree and holiday RSVP web app for my family, 119 members over four generations. </p>
-    <div class="shots">
-      <figure class="shot">
-        <img src="assets/driscmas-welcome.png" alt="The welcome screen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="shot-ph" style="display:none;"><span>Save as<br>driscmas-welcome.png</span></div>
-        <figcaption>The welcome screen</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="assets/driscmas-login-screen.png" alt="The Driscoll family tree, generations 1 and 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="shot-ph" style="display:none;"><span>Save as<br>driscmas-login.png</span></div>
-        <figcaption>Generation 1 and 2</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="assets/driscmas-tree.png" alt="The Driscoll family tree, generations 2 and 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="shot-ph" style="display:none;"><span>Save as<br>driscmas-tree.png</span></div>
-        <figcaption>Generation 2 and 3</figcaption>
-      </figure>
-      <figure class="shot">
-        <img src="assets/driscmas-search.png" alt="The Driscoll family tree search screen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="shot-ph" style="display:none;"><span>Save as<br>driscmas-search.png</span></div>
-        <figcaption>Search the tree</figcaption>
-      </figure>
-    </div>
-    <div class="dots" aria-hidden="true"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-    <div style="text-align:center;margin-top:34px;">
-    <!-- <a class="btn btn-pink" href="driscmas">Read the full case study &rarr;</a> -->
     </div>
   </div>
 </section>
@@ -284,33 +181,430 @@ management, recently leading product areas at <em>Kaiser Permanente</em>. Curren
 <footer class="foot">
   <div class="wrap row">
     <div>
-      <div class="wordmark"><img src="erin-marie-logo-white.png" alt="Erin-Marie " onerror="this.style.display='none';this.nextElementSibling.style.display='inline';"><span style="display:none;">Erin-Marie<b>.</b></span></div>
-      <div class="meta" style="margin-top:8px;">Web and product designer · Bay Area, CA</div>
-      <div class="meta"><a href="mailto:erinmarie716@gmail.com">erinmarie716@gmail.com</a></div>
+      <div class="wordmark"><img src="assets/site/erin-marie-logo-white.png" alt="Erin-Marie" data-fallback><span class="fb-hidden">Erin-Marie<b>.</b></span></div>
+      <div class="meta u69">Brand and web designer · Bay Area, CA</div>
     </div>
   </div>
 </footer>
 
-<script>
-(function(){
-  var shots=document.querySelector('.shots');
-  var dotsWrap=document.querySelector('.dots');
-  if(!shots||!dotsWrap)return;
-  var items=shots.querySelectorAll('.shot');
-  var dots=dotsWrap.querySelectorAll('.dot');
-  function setActive(i){for(var j=0;j<dots.length;j++){dots[j].classList.toggle('active',j===i);}}
-  setActive(0);
-  shots.addEventListener('scroll',function(){
-    var s=items.length>1?(items[1].offsetLeft-items[0].offsetLeft):shots.clientWidth;
-    var idx=Math.round(shots.scrollLeft/s);
-    if(idx<0)idx=0;if(idx>items.length-1)idx=items.length-1;
-    setActive(idx);
-  },{passive:true});
-  for(var i=0;i<dots.length;i++){(function(i){dots[i].addEventListener('click',function(){
-    var item=items[i];if(!item)return;
-    shots.scrollTo({left:item.offsetLeft-(shots.clientWidth-item.clientWidth)/2,behavior:'smooth'});
-  });})(i);}
-})();
-</script>
+
+<!-- CASE STUDY SLIDESHOW -->
+<div class="cs" id="cs" role="dialog" aria-modal="true" aria-label="Case study">
+  <div class="bg" data-close></div>
+  <div class="win">
+    <div class="bar">
+      <div class="proj"><small id="cs-kind"></small><span id="cs-name"></span></div>
+      <div class="steps" id="cs-steps"></div>
+      <button class="x" data-close aria-label="Close">&times;</button>
+    </div>
+    <div class="stage" id="cs-stage"></div>
+    <div class="foot">
+      <div class="n" id="cs-n"></div>
+      <div class="prog"><i id="cs-prog"></i></div>
+      <div class="nav"><button id="cs-prev" aria-label="Previous slide">&larr;</button><button id="cs-next" aria-label="Next slide">&rarr;</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Deck content. One <template> per project; each .slide has data-step (the tag shown in the top strip). -->
+<template id="deck-erin-marie" data-name="Erin-Marie" data-kind="Brand &amp; Website" data-next="loveschool">
+  <div class="slide" data-step="Project">
+    <div class="vis u70"><div class="pad"><img src="assets/erin-marie/logo.png" alt="Erin-Marie script logo" class="u71"></div></div>
+    <div class="txt">
+      <p><b>Erin-Marie</b></p>
+      <p>A personal brand and portfolio site.</p>
+      <p>I designed the logo and designed the site, with a signature script and one pink star as the only spark of color.</p>
+      <div class="tools"><span>Claude</span><span>Flora</span><span>GitHub</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="sw-grid">
+      <div class="sw"><div class="c u72"></div><div class="l"><b>Pink</b>#D6336C &middot; spark, links</div></div>
+      <div class="sw"><div class="c u73"></div><div class="l"><b>Blue</b>#154C63 &middot; depth, calm</div></div>
+      <div class="sw"><div class="c u74"></div><div class="l"><b>Ink</b>#23201C &middot; text</div></div>
+      <div class="sw"><div class="c u75"></div><div class="l"><b>Cream</b>#FBF7F0 &middot; ground</div></div>
+    </div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Type &amp; Voice">
+    <div class="vis"><div class="pad"><div class="tv"><div class="type-spec">
+      <div class="lab">Headlines &middot; Birthstone Bounce</div>
+      <div class="big u76">Brand and Web Designer</div>
+      <div class="lab">Reading &middot; Cormorant Garamond</div>
+      <div class="body u77">A visual style that <i class="u78">evokes emotion and inspires.</i></div>
+      <div class="lab u67">Interface &middot; Inter</div>
+      <div class="body u79">Branding &middot; Content Strategy &middot; UX Design</div>
+    </div><div class="tvsep"></div><div class="voice">
+      <span class="pill u72">Warm</span><span class="pill u73">Plain words</span><span class="pill u73">Encouraging</span><span class="pill u72">First person</span>
+    </div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Visuals">
+    <div class="vis u70"><div class="pad"><div class="u80">
+      <div class="u81"><svg viewBox="0 0 24 24" aria-hidden="true" class="u82"><path d="M12 1.5c.6 4.9 2.6 8.5 10.5 10.5C14.6 14 12.6 17.6 12 22.5 11.4 17.6 9.4 14 1.5 12 9.4 10 11.4 6.4 12 1.5z" fill="#D6336C"/></svg></div>
+      <div class="u83"></div>
+      <div class="u84"></div>
+      <img src="assets/erin-marie/watercolor-splash.jpg" alt="Watercolor splash in blue, pink and cream" class="u85">
+    </div></div></div>
+    
+  </div>
+  
+</template>
+
+<template id="deck-aliotos" data-name="Alioto&rsquo;s Focacceria" data-kind="Brand &amp; Website" data-next="band">
+  <div class="slide" data-step="Project">
+    <div class="vis u54"><div class="pad"><img src="assets/aliotos/logo-red.svg" alt="Alioto&rsquo;s Focacceria logo" class="u86"></div></div>
+    <div class="txt">
+      <p><b>Alioto’s Focacceria</b></p>
+      <p>An Italian sandwich shop in Reno, NV and San Rafael, CA.</p>
+      <p>I created the logo, color palette, voice, and website to capture a brand that is friendly and casual but of exceptional quality, authenticity, and dedication to its craft.</p>
+      <div class="tools"><span>Wix</span><span>Figma</span><span>ChatGPT</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="sw-grid"><div class="sw"><div class="c u87"></div><div class="l"><b>Red</b>#8B0000 &middot; brand color</div></div><div class="sw"><div class="c u88"></div><div class="l"><b>Black</b>#151515 &middot; logo, text</div></div><div class="sw"><div class="c u89"></div><div class="l"><b>Charcoal</b>#393939 &middot; supporting</div></div><div class="sw"><div class="c u90"></div><div class="l"><b>Green</b>#0D814D &middot; logo accent</div></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Type &amp; Voice">
+    <div class="vis"><div class="pad"><div class="tv"><div class="type-spec"><div class="lab">Headlines &middot; Anton</div><div class="big u91">Alioto&rsquo;s Focacceria</div><div class="lab">Subheads &middot; Cookie</div><div class="big u92">Italian Sandwich Shop</div><div class="lab">Body &middot; Helvetica</div><div class="body u93">Visit us in Reno or San Rafael.</div></div><div class="tvsep"></div><div class="voice"><q class="u94">Rooted in tradition with a modern twist, Alioto&rsquo;s Focacceria sources only the finest ingredients to craft mouthwatering sandwiches and pizza on artisanal focaccia. Visit us in Reno or San Rafael, and have an authentic Italian culinary bite.</q><span class="pill u95">Warm</span><span class="pill u95">Welcoming</span><span class="pill u95">Simple</span></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Visuals">
+    <div class="vis u96"><div class="pad"><div class="al-mosaic">
+      <div class="a"><img src="assets/aliotos/sandwiches.jpg" alt="Toasted focaccia sandwiches on Alioto&rsquo;s printed paper in green baskets"></div>
+      <div class="s"></div>
+      <div class="b"><img src="assets/aliotos/mural.jpg" alt="Renaissance-style grotesque mural with a crab, cherubs and a sun face"></div>
+      <div class="c"><img src="assets/aliotos/fish.jpg" alt="Hand-drawn pattern of fish, crabs, shells, lemons and olive branches"></div>
+    </div></div></div>
+    
+  </div>
+  
+  <div class="slide solo" data-step="Web">
+    <div class="vis u96"><div class="pad"><div class="dev"><div class="lap u97"><div class="scr"><div class="vplay u98" data-vtoggle><video src="assets/aliotos/web-scroll.mp4" poster="assets/aliotos/web-scroll.jpg" muted playsinline preload="auto" aria-label="Screen recording scrolling the Alioto&rsquo;s Focacceria website. Click to play or pause." class="u99"></video></div></div><div class="base"></div></div><button type="button" class="vcap" data-vbtn><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#fff"/></svg><span>Click to scroll</span></button></div></div><a class="vlink" href="https://www.aliotosfocacceria.com" target="_blank" rel="noopener">Visit aliotosfocacceria.com &#8594;</a></div>
+  </div>
+</template>
+
+<template id="deck-kitchentable" data-name="The Kitchen Table Reno" data-kind="Website" data-next="reframecbt">
+  <div class="slide" data-step="Project">
+    <div class="vis u64"><div class="pad"><img src="assets/ktr/logo-white.png" alt="The Kitchen Table Reno logo" class="u100"></div></div>
+    <div class="txt">
+      <p><b>The Kitchen Table Reno</b></p>
+      <p>An open-concept Italian restaurant in Reno, Nevada.</p>
+      <p>I designed the website and pulled in visuals and type to create a welcoming and neighborly but high-end feel.</p>
+      <div class="tools"><span>Wix</span><span>Photoshop</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="sw-grid sw7">
+      <div class="sw"><div class="c u101"></div><div class="l"><b>Black</b>#000000</div></div>
+      <div class="sw"><div class="c u102"></div><div class="l"><b>Charcoal</b>#282626</div></div>
+      <div class="sw"><div class="c u103"></div><div class="l"><b>Brass</b>#897754</div></div>
+      <div class="sw"><div class="c u104"></div><div class="l"><b>Light brass</b>#B39F7A</div></div>
+      <div class="sw"><div class="c u105"></div><div class="l"><b>Warm marble</b>#E2DACA</div></div>
+      <div class="sw"><div class="c u106"></div><div class="l"><b>Cool marble</b>#D9D7D4</div></div>
+    </div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Type &amp; Voice">
+    <div class="vis"><div class="pad"><div class="tv"><div class="type-spec"><div class="lab">Headlines &middot; Cormorant Garamond SemiBold</div><div class="big u107">A Place to Gather</div><div class="lab">Body &amp; nav &middot; Avenir LT</div><div class="body u108">Share stories and laughter among neighbors, friends and family.</div></div><div class="tvsep"></div><div class="voice"><q class="u109">All are welcome here.</q><q class="u109">Join our table.</q><q class="u109">A place to gather in the southwest side of Reno.</q><span class="pill u110">Welcoming</span><span class="pill u111">Inviting</span><span class="pill u112">Neighborly</span></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Visuals">
+    <div class="vis"><div class="pad"><div class="ls-mosaic u113"><img src="assets/ktr/photo.jpg" alt="Napkin and glass on the counter, wine wall behind" class="u114"><img src="assets/ktr/marble.jpg" alt="Pale marble tile pattern" class="u115"><img src="assets/ktr/brass.jpg" alt="Brass hexagon tile detail" class="u116"></div></div></div>
+    
+  </div>
+  
+  <div class="slide solo" data-step="Web">
+    <div class="vis u117"><div class="pad"><div class="dev"><div class="lap u97"><div class="scr"><div class="vplay u98" data-vtoggle><video src="assets/ktr/web-scroll.mp4" poster="assets/ktr/web-scroll.jpg" muted playsinline preload="auto" aria-label="Screen recording scrolling the The Kitchen Table Reno website. Click to play or pause." class="u118"></video></div></div><div class="base"></div></div><button type="button" class="vcap" data-vbtn><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#fff"/></svg><span>Click to scroll</span></button></div></div><a class="vlink" href="https://www.thekitchentablereno.com/" target="_blank" rel="noopener">Visit thekitchentablereno.com &#8594;</a></div>
+  </div>
+</template>
+
+<template id="deck-mom" data-name="Mom&rsquo;s Morning" data-kind="Brand &amp; UX Design" data-next="hatch">
+  <div class="slide" data-step="Project">
+    <div class="vis"><div class="pad"><div class="mm-brief"><img class="ph" src="assets/mom/ux-welcome.png" alt="Mom&rsquo;s Morning app home screen"><div class="lg"><img src="assets/mom/logo.png" alt="Mom&rsquo;s Morning logo"></div></div></div></div>
+    <div class="txt">
+      <p><b>Mom’s Morning</b></p>
+      <p>A self-care app that inspires moms to rise, with rewards for taking care of themselves.</p>
+      <p>I created the concept, brand, and product to incentivize moms to put themselves first.</p>
+      <div class="tools"><span>Figma</span><span>Canva</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="mm-colors"><div class="grp">Primary</div><div class="row p"><div class="chip"><div class="c u119"></div><span>#FF884B</span></div><div class="chip"><div class="c u120"></div><span>#222222</span></div></div><div class="grp">Secondary</div><div class="row s"><div class="chip"><div class="c u121"></div><span>#FDDB85</span></div><div class="chip"><div class="c u122"></div><span>#FF4F76</span></div><div class="chip"><div class="c u123"></div><span>#FFDDDD</span></div><div class="chip"><div class="c u124"></div><span>#939191</span></div><div class="chip"><div class="c u125"></div><span>#F7F2EC</span></div><div class="chip"><div class="c u126"></div><span>#CCCCCC</span></div><div class="chip"><div class="c u127"></div><span>#EEEEEE</span></div></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Type &amp; Voice">
+    <div class="vis"><div class="pad"><div class="tv"><div class="type-spec">
+      <div class="lab">Headlines &middot; Libre Baskerville</div>
+      <div class="big u128">Inspiring Moms to <span class="u129">Rise</span></div>
+      <div class="lab">Body &middot; DM Sans</div>
+      <div class="body u130">Join us and earn rewards for taking care of yourself!</div>
+    </div><div class="tvsep"></div><div class="voice"><q class="u131">Happy mom, happy kids!</q><span class="pill u95">Encouraging</span><span class="pill u95">Practical</span><span class="pill u95">Kind</span></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Visuals">
+    <div class="vis"><div class="pad"><div class="mm-imgs"><img class="ph" src="assets/mom/photo.jpg" alt="Smiling woman in a coral jacket holding a bike handlebar outdoors"><div class="mm-card"><img src="assets/mom/icons.png" alt="Mom&rsquo;s Morning icon set"></div></div></div></div>
+    
+  </div>
+  
+  <div class="slide solo" data-step="UX">
+    <div class="vis"><div class="pad"><div class="mm-phones"><img src="assets/mom/ux-welcome.png" alt="Welcome screen"><img src="assets/mom/ux-track.png" alt="Daily tracking screen"><img src="assets/mom/ux-rewards.png" alt="Rewards screen"></div></div><a class="vlink" href="https://www.figma.com/proto/fhMKckvoJRESlDy5UpJlBs/Mom-s-Morning?node-id=106-36&amp;p=f&amp;viewport=347%2C549%2C0.25&amp;t=I2AAYmVvXS0YUoai-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=106%3A36&amp;page-id=106%3A35" target="_blank" rel="noopener">View the live prototype &#8599;</a></div>
+    
+  </div>
+</template>
+
+<template id="deck-hatch" data-name="Hatch My House" data-kind="Brand &amp; Product Design" data-next="erin-marie">
+  <div class="slide" data-step="Project">
+    <div class="vis u132"><div class="pad"><div class="ht-logo2"><img src="assets/hatch/wordmark.png" alt="Hatch My House logo"><img class="hs" src="assets/hatch/house-shingle.jpg" alt="Illustrated house from Hatch My House"></div></div></div>
+    <div class="txt">
+      <p><b>Hatch My House</b></p>
+      <p>A gift registry where friends and family buy parts of a virtual house.</p>
+      <p>I co-founded Hatch My House and created the concept, brand, and product, growing it to 3K+ users and $3.5M in gift sales.</p>
+      <div class="tools"><span>Photoshop</span><span>HTML/CSS</span><span>JavaScript</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="sw-grid sw7"><div class="sw"><div class="c u133"></div><div class="l"><b>Brick red</b>#AF391F &middot; logo</div></div><div class="sw"><div class="c u134"></div><div class="l"><b>Parchment</b>#EBE5DA &middot; page ground</div></div><div class="sw"><div class="c u135"></div><div class="l"><b>Deep blue</b>#02597D &middot; footer, structure</div></div><div class="sw"><div class="c u136"></div><div class="l"><b>Leaf green</b>#80AE43 &middot; buttons, highlights</div></div><div class="sw"><div class="c u137"></div><div class="l"><b>Sky blue</b>#548FA6 &middot; accents</div></div><div class="sw"><div class="c u138"></div><div class="l"><b>Sand</b>#E2C29D &middot; warm accent</div></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Type &amp; Voice">
+    <div class="vis"><div class="pad"><div class="tv"><div class="type-spec"><div class="lab">Headlines &middot; Font name</div><div class="big u139">Hatch My House</div><div class="lab">Body &middot; Font name</div><div class="body">Body text sample goes here.</div></div><div class="tvsep"></div><div class="voice"><q class="u131">Help your people help you.</q><span class="pill u95">Joyful</span><span class="pill u95">Clear</span><span class="pill u95">Reassuring</span></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Visuals">
+    <div class="vis u140"><div class="pad"><div class="ht-mosaic"><div class="a"><img src="assets/hatch/house-tuscan.jpg" alt="Illustrated stone house with mountains and an eagle"></div><div class="b"><img src="assets/hatch/house-cutaway.jpg" alt="Illustrated cutaway house with a gift tooltip"></div><div class="c"><img src="assets/hatch/house-shingle.jpg" alt="Illustrated shingle house with a porch"></div></div></div></div>
+    
+  </div>
+  
+  <div class="slide solo" data-step="Design">
+    <div class="vis u140"><div class="pad"><img class="ht-shot" src="assets/hatch/design.jpg" alt="The Your House Design screen with a blue shingle house"></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Giving">
+    <div class="vis u140"><div class="pad"><img class="ht-shot" src="assets/hatch/campaign.jpg" alt="A Hatch My House campaign page with an illustrated house"></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Gifts">
+    <div class="vis u140"><div class="pad"><img class="ht-shot" src="assets/hatch/gifts.jpg" alt="The My Gifts screen listing each gift, giver, amount and thank-you card status"></div><a class="vlink" href="https://www.facebook.com/hatchmyhouse" target="_blank" rel="noopener">Hatch My House on Facebook &#8594;</a></div>
+    
+  </div>
+</template>
+
+<template id="deck-loveschool" data-name="LoveSchool" data-kind="App Store Design" data-next="kitchentable">
+  <div class="slide" data-step="Project">
+    <div class="vis u63"><div class="pad"><img src="assets/loveschool/logo-white.png" alt="LoveSchool logo" class="u100"></div></div>
+    <div class="txt">
+      <p><b>LoveSchool</b></p>
+      <p>An online platform and program devoted to helping people feel better and overcome insecure attachment.</p>
+      <p>I designed the App Store preview images, pairing short headlines with paper-flower artwork so the listing feels calm and warm.</p>
+      <div class="tools"><span>Midjourney</span><span>Photoshop</span><span>Figma</span></div>
+    </div>
+  </div>
+<div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="sw-grid"><div class="sw"><div class="c u141"></div><div class="l"><b>Teal</b>#4A6870 &middot; backgrounds</div></div><div class="sw"><div class="c u142"></div><div class="l"><b>Coral</b>#F08F7F &middot; accents</div></div><div class="sw"><div class="c u143"></div><div class="l"><b>Plum</b>#64496A &middot; text</div></div><div class="sw"><div class="c u144"></div><div class="l"><b>Cream</b>#FBF4EC &middot; panels</div></div></div></div></div>
+    
+  </div>
+<div class="slide solo" data-step="Visuals">
+    <div class="vis u145"><div class="pad"><div class="ls-mosaic">
+      <div class="a"><img src="assets/loveschool/banner.jpg" alt="Paper-quilled heart banner"></div>
+      <div><img src="assets/loveschool/flowers-b.jpg" alt="Paper-flower background"></div>
+      <div><img src="assets/loveschool/flowers-a.jpg" alt="Paper-flower background with ranunculus"></div>
+      <div class="cf2"><img src="assets/loveschool/confetti.png" alt="Heart confetti"></div>
+      <div class="ct"><img src="assets/loveschool/circle.png" alt="Coral circle illustration"></div>
+      <div class="w"><img src="assets/loveschool/logo-white.png" alt="LoveSchool wordmark in white"></div>
+    </div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="App Store">
+    <div class="vis u145"><div class="pad"><div class="ls-car"><div class="ls-track" tabindex="0" aria-label="All ten App Store images, scroll sideways"><img src="assets/loveschool/s1.jpg" alt="App Store screenshot 1: Healthy relationships and lasting love" loading="lazy"><img src="assets/loveschool/s2.jpg" alt="App Store screenshot 2: Leave relationship anxiety behind" loading="lazy"><img src="assets/loveschool/s3.jpg" alt="App Store screenshot 3: Guidance on the go" loading="lazy"><img src="assets/loveschool/s4.jpg" alt="App Store screenshot 4: Heal your broken heart" loading="lazy"><img src="assets/loveschool/s5.jpg" alt="App Store screenshot 5: Find the hidden patterns in your relationships" loading="lazy"><img src="assets/loveschool/s6.jpg" alt="App Store screenshot 6: Get the love you want" loading="lazy"><img src="assets/loveschool/s7.jpg" alt="App Store screenshot 7: Turn tears into laughter" loading="lazy"><img src="assets/loveschool/s8.jpg" alt="App Store screenshot 8: Who taught you how to love?" loading="lazy"><img src="assets/loveschool/s9.jpg" alt="App Store screenshot 9: What community members say" loading="lazy"><img src="assets/loveschool/s10.jpg" alt="App Store screenshot 10: Coaching, Coursework, Community" loading="lazy"></div><div class="ls-dots"><button type="button" class="on" aria-label="Show screenshot 1"></button><button type="button" class="on" aria-label="Show screenshot 2"></button><button type="button" class="on" aria-label="Show screenshot 3"></button><button type="button" class="on" aria-label="Show screenshot 4"></button><button type="button" class="" aria-label="Show screenshot 5"></button><button type="button" class="" aria-label="Show screenshot 6"></button><button type="button" class="" aria-label="Show screenshot 7"></button><button type="button" class="" aria-label="Show screenshot 8"></button><button type="button" class="" aria-label="Show screenshot 9"></button><button type="button" class="" aria-label="Show screenshot 10"></button></div></div></div></div>
+    
+  </div>
+</template>
+
+<template id="deck-reframecbt" data-name="ReframeCBT" data-kind="Brand &amp; Website" data-next="gamecaviar">
+  <div class="slide" data-step="Project">
+    <div class="vis u66"><div class="pad"><img src="assets/reframe/logo.png" alt="Reframe CBT logo" class="u71"></div></div>
+    <div class="txt">
+      <p><b>Reframe CBT</b></p>
+      <p>A practice offering Cognitive Behavioral Therapy for college students and adults in California.</p>
+      <p>I designed the logo, brand, and website for a therapist to attract clients interested in healing with cognitive behavioral therapy.</p>
+      <div class="tools"><span>Figma</span><span>Midjourney</span><span>Squarespace</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="sw-grid"><div class="sw"><div class="c u146"></div><div class="l"><b>Navy</b>#222E3A &middot; ground</div></div><div class="sw"><div class="c u147"></div><div class="l"><b>Peach</b>#E8BC8B &middot; logo, accents</div></div><div class="sw"><div class="c u148"></div><div class="l"><b>Sage</b>#657461 &middot; tagline</div></div><div class="sw"><div class="c u149"></div><div class="l"><b>Tan</b>#9D886B &middot; photo ring</div></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Type &amp; Voice">
+    <div class="vis"><div class="pad"><div class="tv"><div class="type-spec"><div class="lab">Headlines &middot; Lustria</div><div class="big u150">Reframe. Rewire. Reset.</div><div class="lab">Body &middot; Inter</div><div class="body">Cognitive Behavioral Therapy (CBT) for college students and adults in California.</div></div><div class="tvsep"></div><div class="voice"><q class="u131">Reframe. Rewire. Reset.</q><span class="pill u95">Calm</span><span class="pill u95">Clear</span><span class="pill u95">Supportive</span></div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Visuals">
+    <div class="vis u66"><div class="pad"><div class="rf-mosaic">
+      <div class="a"><img src="assets/reframe/garden.jpg" alt="Garden path framed by tall brass lines, with the Reframe CBT mark above it"></div>
+      <div class="b"><img src="assets/reframe/fog.jpg" alt="Evergreen trees in soft fog"></div>
+      <div class="c"><img src="assets/reframe/beanie.jpg" alt="Woman in a pink beanie looking out over a forested valley"></div>
+    </div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Moodboard">
+    <div class="vis u66"><div class="pad"><img src="assets/reframe/moodboard.webp" alt="Reframe CBT moodboard: a woman seated facing a mountain valley, a tropical greenhouse, and the floral mark" class="u151"></div></div>
+    
+  </div>
+  
+  <div class="slide solo" data-step="Web">
+    <div class="vis u152"><div class="pad"><div class="dev"><div class="lap u97"><div class="scr"><div class="rfview u153"><div class="rfstrip u154"><div class="u155"><img src="assets/reframe/page-support.jpg" alt="Reframe CBT page: With support and practical tools, lasting change is within reach" class="u156"></div><div class="u155"><img src="assets/reframe/page-cbt.jpg" alt="Reframe CBT page: What is CBT" class="u156"></div><div class="u155"><img src="assets/reframe/page-specialties.jpg" alt="Reframe CBT Specialties page" class="u156"></div></div></div></div><div class="base"></div></div><button type="button" class="vcap" data-rfscroll><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#fff"/></svg><span>Click to scroll</span></button></div></div></div>
+  </div>
+</template>
+
+<template id="deck-driscmas" data-name="Driscmas" data-kind="Product Design">
+  <div class="slide" data-step="Project">
+    <div class="vis u157"><div class="pad"><img src="assets/driscmas/welcome.jpg" alt="Driscmas welcome screen" class="u158"></div></div>
+    <div class="txt">
+      <p><b>Driscmas</b></p>
+      <p>A digital family tree for 119 people across four generations.</p>
+      <p>I built a web app for my family’s annual Christmas party so the fourth-generation kids can see who belongs to who.</p>
+      <div class="tools"><span>Claude</span><span>GitHub</span><span>Cloudflare</span></div>
+      <div class="meta"><span class="soon">Case study coming soon</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Card">
+    <div class="vis u157"><div class="pad"><img src="assets/driscmas/card.jpg" alt="A Driscmas person card with initials, name and generation" class="u159"></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Tree">
+    <div class="vis u157"><div class="pad"><div class="mm-phones dr-two"><img src="assets/driscmas/login-screen.jpg" alt="Generations one and two of the family tree"><img src="assets/driscmas/tree.jpg" alt="Generations two and three of the family tree"></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Search">
+    <div class="vis u157"><div class="pad"><img src="assets/driscmas/search.jpg" alt="Searching the family tree by name" class="u158"></div></div>
+    
+  </div>
+</template>
+<template id="deck-gamecaviar" data-name="Game Caviar" data-kind="Website &amp; Product Design">
+  <div class="slide" data-step="Project">
+    <div class="vis u132"><div class="pad"><img src="assets/gamecaviar/logo.png" alt="Game Caviar logo" class="u160"></div></div>
+    <div class="txt">
+      <p><b>Game Caviar</b></p>
+      <p>The world’s first enterprise partnerships platform built for the game development industry.</p>
+      <p>I built the website and designed five dashboard screens to promote the business to the public, partners, and investors.</p>
+      <div class="tools"><span>Figma</span><span>Framer</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Web">
+    <div class="vis u152"><div class="pad"><div class="dev"><div class="lap u97"><div class="scr"><div class="vplay u98" data-vtoggle><video src="assets/gamecaviar/web-scroll.mp4" poster="assets/gamecaviar/web-scroll.jpg" muted playsinline preload="auto" aria-label="Screen recording scrolling the Game Caviar home page. Click to play or pause." class="u161"></video></div></div><div class="base"></div></div><button type="button" class="vcap" data-vbtn><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#fff"/></svg><span>Click to scroll</span></button></div></div><a class="vlink" href="https://gamecaviar.com" target="_blank" rel="noopener">Visit gamecaviar.com &#8594;</a></div>
+  </div>
+  <div class="slide solo" data-step="Dashboard">
+    <div class="vis u162"><div class="pad dpair"><img src="assets/gamecaviar/dashboard-home.webp" alt="Game Caviar home screen"><img src="assets/gamecaviar/dashboard-rfp.webp" alt="Game Caviar request-for-proposal window"></div><span class="vlink soon">Case study coming soon</span></div>
+  </div>
+</template>
+
+<template id="deck-band" data-name="BAND" data-kind="Brand &amp; Website" data-next="wildsite">
+  <div class="slide" data-step="Project">
+    <div class="vis u132"><div class="pad"><img src="assets/band/logo-color.png" alt="BAND: Building Advocacy for Nonviolent Discipline" class="u163"></div></div>
+    <div class="txt">
+      <p><b>BAND: Building Advocacy for Nonviolent Discipline</b></p>
+      <p>A campaign to make California the first state to ban corporal punishment in private schools and the home.</p>
+      <p>I created the name, brand, website, and social media to feel professional and relatable, giving the public, parents and legislators the research and stories to act.</p>
+      <div class="tools"><span>Squarespace</span><span>Claude</span><span>Canva</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="sw-grid">
+      <div class="sw"><div class="c u164"></div><div class="l"><b>Navy</b>#13304C · authority</div></div>
+      <div class="sw"><div class="c u165"></div><div class="l"><b>Blue</b>#185793 · trust, links</div></div>
+      <div class="sw"><div class="c u166"></div><div class="l"><b>Terracotta</b>#CD6A3C · warmth, action</div></div>
+      <div class="sw"><div class="c u167"></div><div class="l"><b>Mist</b>#F1F2F2 · ground</div></div>
+    </div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Type &amp; Voice">
+    <div class="vis"><div class="pad"><div class="tv"><div class="type-spec">
+      <div class="lab">Headlines · Rock Salt</div>
+      <div class="big">Behind every statistic is a child</div>
+      <div class="lab">Body · Inter</div>
+      <div class="body"><b>Band</b> together for laws that support nonviolent discipline, and <b>ban</b> all corporal punishment in California.</div>
+    </div><div class="tvsep"></div><div class="voice">
+      <q>Band together for all kids. Ban corporal punishment.</q>
+      <span class="pill">Direct</span><span class="pill">Evidence-led</span>
+    </div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Visuals">
+    <div class="vis u56"><div class="pad"><div class="bd-mosaic">
+      <div class="a"><img src="assets/band/img-braid.jpg" alt="Girl with a braid across her eyes"></div>
+      <div class="b"><img src="assets/band/img-sign.jpg" alt="Boy holding a cardboard sign reading Discipline Not Damage"></div>
+      <div class="c"><img src="assets/band/img-child.jpg" alt="Child with head down beside a teddy bear"></div>
+    </div></div></div>
+    
+  </div>
+  
+  <div class="slide solo" data-step="Web">
+    <div class="vis u168"><div class="pad"><div class="dev"><div class="lap u97"><div class="scr"><div class="vplay u98" data-vtoggle><video src="assets/band/web-scroll.mp4" poster="assets/band/web-scroll.jpg" muted playsinline preload="auto" aria-label="Screen recording scrolling the BAND website. Click to play or pause." class="u169"></video></div></div><div class="base"></div></div><button type="button" class="vcap" data-vbtn><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#fff"/></svg><span>Click to scroll</span></button></div></div><a class="vlink" href="https://bandtogetherca.com" target="_blank" rel="noopener">Visit bandtogetherca.com &#8594;</a></div>
+  </div>
+  <div class="slide solo" data-step="Social">
+    <div class="vis u56"><div class="pad"><div class="bd-social">
+      <img src="assets/band/social-1.jpg" alt="Instagram post: Were you spanked as a child?">
+      <img src="assets/band/social-2.jpg" alt="Instagram post: research quote on spanking and abuse risk">
+      <img src="assets/band/social-3.jpg" alt="Instagram post: The invisible problem">
+      <img src="assets/band/social-4.jpg" alt="Instagram post: Data that breaks your heart">
+    </div></div></div>
+    
+  </div>
+</template>
+
+<template id="deck-wildsite" data-name="Wildsite Co." data-kind="Brand &amp; Website" data-next="mom">
+  <div class="slide" data-step="Project">
+    <div class="vis u170"><div class="pad"><img src="assets/wildsite/logo.png" alt="Wildsite wordmark with sparkle mark" class="u86"></div></div>
+    <div class="txt">
+      <p><b>Wildsite Co.</b></p>
+      <p>My design studio which helps small businesses elevate their brand online.</p>
+      <p>I created the name, logo, color palette, voice, visuals, and website to attract business owners in the ‘art of living well.’</p>
+      <div class="tools"><span>Squarespace</span><span>Claude</span><span>Flora</span></div>
+    </div>
+  </div>
+  <div class="slide solo" data-step="Color">
+    <div class="vis"><div class="pad"><div class="sw-grid">
+      <div class="sw"><div class="c u171"></div><div class="l"><b>Black</b>#1A1A1A · type, buttons</div></div>
+      <div class="sw"><div class="c u172"></div><div class="l"><b>Peach</b>#F4A57E · primary action</div></div>
+      <div class="sw"><div class="c u173"></div><div class="l"><b>Terracotta</b>#E78550 · sparks, underlines</div></div>
+      <div class="sw"><div class="c u174"></div><div class="l"><b>Green</b>#728B5F · accents</div></div>
+      <div class="sw"><div class="c u175"></div><div class="l"><b>Cream</b>#FBF6EB · ground</div></div>
+    </div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Type &amp; Voice">
+    <div class="vis"><div class="pad"><div class="tv"><div class="type-spec">
+      <div class="lab">Headlines · Playfair Display</div>
+      <div class="big u176">Websites made <i class="u177">wild</i>, branded <i>&amp;</i> <i class="u178">authentic</i></div>
+      <div class="lab">Body · Inter</div>
+      <div class="body u179">Elevate your brand online, with a modern website and compelling art and copy.</div>
+    </div><div class="tvsep"></div><div class="voice">
+      <q class="u180">Is your business growing wildly?</q>
+      <span class="pill u181">Warm</span><span class="pill u182">Plain-spoken</span><span class="pill u183">A little playful</span>
+    </div></div></div></div>
+    
+  </div>
+  <div class="slide solo" data-step="Visuals">
+    <div class="vis u170"><div class="pad"><div class="ws-mosaic">
+      <div class="wash"><img src="assets/wildsite/wash.jpg" alt="Watercolor wash in blush, peach and sage"></div>
+      <div class="flw"><img src="assets/wildsite/flower.jpg" alt="Watercolor flower sprig"></div>
+      <div class="wg"><img src="assets/wildsite/w-green.png" alt="Green W monogram"></div>
+      <div class="fls"><img src="assets/wildsite/flowers.jpg" alt="Four flowers on tall stems in peach and sage"></div>
+    </div></div></div>
+    
+  </div>
+  
+  <div class="slide solo" data-step="Web">
+    <div class="vis u184"><div class="pad"><div class="dev"><div class="lap u97"><div class="scr"><div class="vplay u98" data-vtoggle><video src="assets/wildsite/web-scroll.mp4" poster="assets/wildsite/web-scroll.jpg" muted playsinline preload="auto" aria-label="Screen recording scrolling the Wildsite Co. website. Click to play or pause." class="u185"></video></div></div><div class="base"></div></div><button type="button" class="vcap" data-vbtn><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#fff"/></svg><span>Click to scroll</span></button></div></div><a class="vlink" href="https://wildsite.co" target="_blank" rel="noopener">Visit wildsite.co &#8594;</a></div>
+  </div>
+</template>
+
+
+
+
+
+
+<script src="script.js?v=1"></script>
 </body>
 </html>
