@@ -1,0 +1,96 @@
+<title>Erin-Marie Type Options</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Instrument+Serif:ital@0;1&family=Gloock&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600&family=DM+Sans:wght@400;500;600&family=Young+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: three stacked specimen boards, each the same home-page header and work tile set in a different pairing. */
+:root{
+  --bg:#FBF7F0; --card:#FFFFFF; --ink:#23201C; --ink-soft:#5B544B; --line:#E6DCCB;
+  --pink:#D6336C; --teal:#154C63;
+  --script:"Birthstone Bounce","Snell Roundhand",cursive;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17140F;--card:#221E18;--ink:#F3ECDF;--ink-soft:#B9AFA0;--line:#3A342B;--pink:#F0638F;--teal:#7FC1DA;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17140F;--card:#221E18;--ink:#F3ECDF;--ink-soft:#B9AFA0;--line:#3A342B;--pink:#F0638F;--teal:#7FC1DA;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,sans-serif;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px;}
+main{max-width:1040px;margin:0 auto;display:grid;gap:56px;}
+h1.intro{font:600 .8rem/1.2 "Inter",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin:0;}
+.note{max-width:62ch;color:var(--ink-soft);line-height:1.6;margin:8px 0 0;font-size:.95rem;}
+.board{display:grid;gap:22px;min-width:0;}
+.label{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;border-top:.75px solid var(--ink);padding-top:12px;}
+.label b{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;}
+.label span{color:var(--ink-soft);font-size:.85rem;}
+.spec{display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:start;}
+@media(max-width:760px){.spec{grid-template-columns:1fr;gap:24px}}
+.eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--pink);font-weight:600;margin:0 0 14px;}
+.sig{font-family:var(--script);font-size:2.1rem;line-height:1;color:var(--pink);margin:0 0 6px;}
+h2{margin:0;font-size:clamp(2rem,5.2vw,3.5rem);line-height:1.04;text-wrap:balance;font-weight:400;}
+.lead{margin:16px 0 0;font-size:1.05rem;line-height:1.55;color:var(--ink-soft);max-width:46ch;}
+.tile{background:var(--card);border:1px solid var(--line);padding:20px;display:grid;gap:8px;min-width:0;}
+.tile .tag{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--pink);font-weight:600;}
+.tile h3{margin:0;font-size:1.5rem;line-height:1.15;font-weight:400;}
+.tile p{margin:0;font-size:.9rem;line-height:1.5;color:var(--ink-soft);}
+.tile .site{font-size:.8rem;color:var(--pink);font-weight:600;}
+
+/* A */
+.A h2{font-family:"Fraunces",serif;font-weight:600;font-variation-settings:"opsz" 144;letter-spacing:-.01em;}
+.A h2 em{font-style:italic;font-weight:400;color:var(--teal);}
+.A h3{font-family:"Fraunces",serif;font-weight:600;}
+.A,.A .lead,.A .tile p,.A .tile .tag,.A .eyebrow{font-family:"Bricolage Grotesque",sans-serif;}
+/* B */
+.B h2{font-family:"Instrument Serif",serif;font-size:clamp(2.4rem,6vw,4.2rem);letter-spacing:-.01em;}
+.B h2 em{color:var(--pink);}
+.B h3{font-family:"Instrument Serif",serif;font-size:1.8rem;}
+.B,.B .lead,.B .tile p,.B .tile .tag,.B .eyebrow{font-family:"DM Sans",sans-serif;}
+/* C */
+.C h2{font-family:"Gloock",serif;}
+.C h2 em{font-family:var(--script);font-style:normal;font-size:1.25em;color:var(--pink);line-height:.8;}
+.C h3{font-family:"Young Serif",serif;font-size:1.35rem;}
+.C,.C .lead,.C .tile p,.C .tile .tag,.C .eyebrow{font-family:"Bricolage Grotesque",sans-serif;}
+</style>
+
+<main>
+  <header>
+    <h1 class="intro">Type options for erin-marie.com</h1>
+    <p class="note">Same header and work tile in three pairings. Birthstone Bounce, the face in your logo, appears in each as the signature accent. Pick one, or tell me what to mix.</p>
+  </header>
+
+  <section class="board A">
+    <div class="label"><b>A. Fraunces + Bricolage Grotesque</b><span>Soft, slightly quirky serif with a friendly grotesque. Closest to the current warmth.</span></div>
+    <div class="spec">
+      <div>
+        <p class="sig">Erin-Marie Driscoll</p>
+        <p class="eyebrow">Brand and web designer</p>
+        <h2>An ideas person who <em>designs &amp; delivers.</em></h2>
+        <p class="lead">Fifteen years turning the spark into a real thing.</p>
+      </div>
+      <div class="tile"><span class="tag">Brand &amp; web</span><h3>Alioto&rsquo;s Focacceria</h3><p>Identity and website for a focaccia bakery, with a logo drawn from scratch.</p><span class="site">aliotosfocacceria.com &#8599;</span></div>
+    </div>
+  </section>
+
+  <section class="board B">
+    <div class="label"><b>B. Instrument Serif + DM Sans</b><span>Tall, elegant display serif. Quietest option, most editorial.</span></div>
+    <div class="spec">
+      <div>
+        <p class="sig">Erin-Marie Driscoll</p>
+        <p class="eyebrow">Brand and web designer</p>
+        <h2>An ideas person who <em>designs &amp; delivers.</em></h2>
+        <p class="lead">Fifteen years turning the spark into a real thing.</p>
+      </div>
+      <div class="tile"><span class="tag">Brand &amp; web</span><h3>Alioto&rsquo;s Focacceria</h3><p>Identity and website for a focaccia bakery, with a logo drawn from scratch.</p><span class="site">aliotosfocacceria.com &#8599;</span></div>
+    </div>
+  </section>
+
+  <section class="board C">
+    <div class="label"><b>C. Gloock + Young Serif + Birthstone Bounce in the headline</b><span>Heavier, more characterful. The script carries the key words, echoing your logo.</span></div>
+    <div class="spec">
+      <div>
+        <p class="sig">Erin-Marie Driscoll</p>
+        <p class="eyebrow">Brand and web designer</p>
+        <h2>An ideas person who <em>designs &amp; delivers.</em></h2>
+        <p class="lead">Fifteen years turning the spark into a real thing.</p>
+      </div>
+      <div class="tile"><span class="tag">Brand &amp; web</span><h3>Alioto&rsquo;s Focacceria</h3><p>Identity and website for a focaccia bakery, with a logo drawn from scratch.</p><span class="site">aliotosfocacceria.com &#8599;</span></div>
+    </div>
+  </section>
+</main>
