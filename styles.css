@@ -1202,3 +1202,8 @@
   .prail-wrap{padding-bottom:56px;}
   .prail-wrap .posts-more{bottom:12px;}
 }
+
+/* Centered left/right buttons under the Portfolio rail (desktop only; phones use the pink arrow) */
+#work .rail-nav.rail-nav-c{display:flex !important;justify-content:center;gap:14px;margin:6px auto 0;}
+#work .rail-nav.rail-nav-c button{width:46px;height:46px;font-size:1.2rem;}
+@media(max-width:760px){#work .rail-nav.rail-nav-c{display:none !important;}}
